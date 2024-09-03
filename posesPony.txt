@@ -40,6 +40,6 @@
 "<lora:pony/poses/lapfingering.safetensors:1.0>, lapfingering, sitting on lap,(faceless male), steam, (fully nude), (aroused), moaning, ahegao",
 "<lora:pony/poses/CondomFillV1.safetensors:1.0>, condom,condballoon, fullcond,condom filling, nude",
 "<lora:pony/poses/Concept_Cheek_bulge.safetensors:1.0>, cheek bulge, fellatio, 1girl, pov, penis",
-"<lora:pony/poses/Douple_penetration-000003.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh, 2boys, 1girl, threesome, hardcore sex, double penetration, anal sex and vaginal sex, doggystyle position, being penetrated for below and up, ass angle, ass focus, close camera, showing girl face, girl face",
+"<lora:pony/poses/Double_Penetration_LoRa__PonyXL-000031.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh,1girl, 2boys, 2penises, double penetration, anal, vaginal, mmf threesome, group sex",
 "<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora,tentacles,tentaclepitlora,pregnant,lactation,slime,sucction cups,tentacle pit",
 "<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora"]
