@@ -1,6 +1,7 @@
 # Lewd-poses-for-Stable-Diffusion
 Lewd Poses for SD (prompt only)
 posesPony, needed LORA:
+I added some poses found in internet and many made with GPT https://chatgpt.com/g/g-cZGabnj7j-pony-diffusion-prompt-builder
 
 https://civitai.com/models/445957/tentacle-pit-pony-sdxl?modelVersionId=496617
 
