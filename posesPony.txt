@@ -1,4 +1,9 @@
 DONOTTOUCHTHISLINE
+spread legs, panty, gasping for hair, on bed, sexy, detailed clothing,
+<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja
+nipples and pussy visible, detailed pussy, perfect pussy, ahegao, rolling eyes, extremely stretched pussy, big stomach bulge, balls deep, extremely detailed stomach bulge, penis outline stomach bulge, cum pool, excessice cum, massive creampie, size difference, impossible fit, <lora:pony/poses/Extremely_detailed_stomach_bulge.safetensors:0.8>
+(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus, <lora:pony/poses/skirtlift_both_view.safetensors:0.5>, micro skirt, skirt
+(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus
 <lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, <lora:cum-inflation-ponyxl-lora-nochekaiser:1>, cum inflation, inflation, big belly, excessive cum, cum overflow, cum, rolling eyes,ahegao, cum in nose, ejaculation, cum in mouth, cervical penetration, sex, 
 <lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, 
 <lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,(pregnant:1.2)
@@ -14,7 +19,7 @@ extreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insert
 extreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (anal:1.2), anal_expansion,squatting on a dildo in the floor, (frontview:1.2)
 naked, spread_legs, vagina_visible, facing_viewer, explicit, solo, ((spreading_own_pussy))
 peeing, ahegao, broken expression, ((after_rape)),((1girl)),((solo)), after_sex, bed, spread_legs, spread_arms
-<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, nude,1boy,vaginal,reverse suspended congress,extreme_insertion,(((huge_penis))),stomach bulge,uncensored,large_insertion,(extreme insertion:1.5),(stomach bulge)
+<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, nude,1boy,vaginal,reverse suspended congress,extreme_insertion,(((huge_penis))),stomach bulge,uncensored,large_insertion,(extreme_insertion:1.5),(stomach bulge)
 looking back, closeup, from below, low angle, spread ass, naughty_face, blush, parted lips, half-closed_eyes
 missionary, vaginal penetration, 1boy, chocking, ahegao, panty to the side, sideview, belly buldge, deep penetration, extreme insertion, xray, <lora:pony/poses/extreme_insertion_ponyXL_v1.2.safetensors:1>
 reversed cowgirl, cowgirl, woman facing away from viewer, pov, big ass, exposed anus
@@ -55,7 +60,7 @@ rape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, 
 <lora:pony/poses/10z_thighsex_pony_v1.safetensors:1.0>, thighsex, girl on top, legs together, pov, cum on thighs, ejaculation, erection, thigh focus, penis between thighs
 <lora:pony/poses/human_onahole.safetensors:0.8>, human onahole,torso grab, rough sex, stomach bulge
 <lora:pony/poses/lapfingering.safetensors:1.0>, lapfingering, sitting on lap,(faceless male), steam, (fully nude), (aroused), moaning, ahegao
-<lora:pony/poses/CondomFillV1.safetensors:1.0>, condom,condballoon, fullcond,condom filling, nude
+<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja
 <lora:pony/poses/Concept_Cheek_bulge.safetensors:1.0>, cheek bulge, fellatio, 1girl, pov, penis
 <lora:pony/poses/Double_Penetration_LoRa__PonyXL-000031.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh,1girl, 2boys, 2penises, double penetration, anal, vaginal, mmf threesome, group sex
 <lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora,tentacles,tentaclepitlora,pregnant,lactation,slime,sucction cups,tentacle pit
