@@ -1,4 +1,11 @@
 DONOTTOUCHTHISLINE
+<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,
+<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,
+<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,
+<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,
+<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3
+<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,(frontal, from the front)
+<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,sideview
 spread legs, panty, gasping for hair, on bed, sexy, detailed clothing,
 <lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja
 nipples and pussy visible, detailed pussy, perfect pussy, ahegao, rolling eyes, extremely stretched pussy, big stomach bulge, balls deep, extremely detailed stomach bulge, penis outline stomach bulge, cum pool, excessice cum, massive creampie, size difference, impossible fit, <lora:pony/poses/Extremely_detailed_stomach_bulge.safetensors:0.8>
