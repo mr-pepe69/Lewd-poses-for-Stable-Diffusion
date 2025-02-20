@@ -1,4 +1,12 @@
 DONOTTOUCHTHISLINE
+<lora:pony/clothing body/0064 translucent temptation_v1_pony.safetensors:1.0>,ruanyi0064,fishnet,bodysuit,no panties,nipples
+<lora:pony/clothing body/Rags__Slave_clothing_Lora_Pony-000006.safetensors:1.0>,torn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, <lora:pony/clothing body/scaredv4-000009.safetensors:1.0>,scared expression, tears, criying, pitch black background,full body,spread legs,terrified, peeing, exposed pussy, pis,
+<lora:pony/clothing body/Rags__Slave_clothing_Lora_Pony-000006.safetensors:1.0>,torn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, <lora:pony/clothing body/scaredv4-000009.safetensors:1.0>,scared expression, tears, criying, pitch black background,full body,spread legs,
+<lora:pony/clothing body/translucent_bunnysuit_v0.1-pony.safetensors:1.0>,Jed-bny, Black Bodysuit, Bunny Ears Headband, White Collar, Black Bow Tie, Fishnet Stockings, Black Heels, White Bunny Tail ,White Gloves
+<lora:pony/clothing body/china dress_Pony_V1.0.safetensors:1.0>,jyojifuku, china dress, skirt
+<lora:pony/clothing/sexy lingerie_V1.0.safetensors:1.0>,sexy lingerie, underwear, see-through
+<lora:pony/clothing/0325 printed transparent cheongsam_v1_pony.safetensors:1.0>,ruanyi0325,see-through dress,nipples,pelvic curtain,side slit,bottomless,short sleeves,china dress,star print,
+maid apron, maid, maid headdress, thighhighs, wrist cuffs, 1girl, high heels, kneeling, side view, exposed breast,maid
 <lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater, <lora:pony/poses/folded double v.safetensors:1.0>,folded double v, spread legs, legs up, double v
 <lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up
 <lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater, kneeling, smiling, looking up, looking at viewer, from above,drooling
