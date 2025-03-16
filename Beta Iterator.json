@@ -1,48 +1,7 @@
 {
-  "last_node_id": 155,
-  "last_link_id": 284,
+  "last_node_id": 194,
+  "last_link_id": 397,
   "nodes": [
-    {
-      "id": 73,
-      "type": "VAEDecode",
-      "pos": [
-        2320,
-        1810
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 37,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 65
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 66
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            108
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      },
-      "widgets_values": []
-    },
     {
       "id": 104,
       "type": "Reroute",
@@ -55,7 +14,7 @@
         26
       ],
       "flags": {},
-      "order": 32,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -93,7 +52,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 25,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -118,93 +77,7 @@
       },
       "widgets_values": [
         "",
-        "zPDXL3,score_9, score_8_up, score_7_up, rating_explicit, BREAK,,1girl, Sbkin, sheep girl, long hair, purple hair, braids, curved horns, pink eyes, ahoge,<lora:pony/lol/Spirit_blossom_Kindred-000006.safetensors:1.0>,\n,,,"
-      ]
-    },
-    {
-      "id": 66,
-      "type": "KSamplerAdvanced",
-      "pos": [
-        2360,
-        1420
-      ],
-      "size": [
-        315,
-        334
-      ],
-      "flags": {},
-      "order": 36,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 133
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 72
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 61
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 68
-        },
-        {
-          "name": "noise_seed",
-          "type": "INT",
-          "link": 107,
-          "widget": {
-            "name": "noise_seed"
-          }
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "link": 150,
-          "widget": {
-            "name": "cfg"
-          }
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 151,
-          "widget": {
-            "name": "steps"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            65
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSamplerAdvanced"
-      },
-      "widgets_values": [
-        "enable",
-        200835689075623,
-        "randomize",
-        20,
-        8,
-        "euler_ancestral",
-        "karras",
-        0,
-        10000,
-        "disable"
+        "score_9, score_8_up, score_7_up, rating_explicit, source_anime, BREAK,,dfSna, cyan hair, gradient hair, twintails, very long hair, blue eyes, big breast,,<lora:pony/styles/modern_anime_screencap_v1_0.safetensors:1.0>,anime screencap,\n,<lora:pony/lol/defaultsona-pdxl-nvwls-v1.safetensors:0.7>,,,,"
       ]
     },
     {
@@ -219,7 +92,7 @@
         150
       ],
       "flags": {},
-      "order": 23,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -285,78 +158,371 @@
       ]
     },
     {
-      "id": 76,
-      "type": "CLIPTextEncode",
+      "id": 118,
+      "type": "CLIPSetLastLayer",
       "pos": [
-        2130,
-        1440
+        1850,
+        2090
       ],
       "size": [
-        210,
-        54
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 147
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            167
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 134,
+      "type": "Note",
+      "pos": [
+        1310,
+        1830
+      ],
+      "size": [
+        420,
+        130
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "boleromixpony_v170.safetensors works really well! when used with gardevoir LORAs has a lilttle issues where many times skin comes as normal human instead of white."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 92,
+      "type": "Reroute",
+      "pos": [
+        1500,
+        1600
+      ],
+      "size": [
+        75,
+        26
       ],
       "flags": {},
       "order": 34,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 70
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 71,
+          "name": "",
+          "type": "*",
+          "link": 297,
           "widget": {
-            "name": "text"
+            "name": "value"
           }
         }
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
+          "name": "",
+          "type": "*",
           "links": [
-            72
+            112,
+            124
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 152,
+      "type": "StringFromList",
+      "pos": [
+        70,
+        1540
+      ],
+      "size": [
+        315,
+        122
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "list_input",
+          "type": "STRING",
+          "link": 278,
+          "widget": {
+            "name": "list_input"
+          }
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 271,
+          "widget": {
+            "name": "index"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "list item",
+          "type": "STRING",
+          "links": [
+            272,
+            284
+          ],
+          "slot_index": 0,
+          "shape": 6
+        },
+        {
+          "name": "size",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "wraps",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFromList"
       },
       "widgets_values": [
+        "",
+        0
+      ]
+    },
+    {
+      "id": 98,
+      "type": "Logic Boolean",
+      "pos": [
+        -920,
+        1410
+      ],
+      "size": [
+        315,
+        118
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "NUMBER",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            291
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Logic Boolean"
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 49,
+      "type": "CR Prompt Text",
+      "pos": [
+        -3630,
+        1650
+      ],
+      "size": [
+        2670,
+        1000
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            247
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Prompt Text"
+      },
+      "widgets_values": [
+        "DONOTTOUCHTHISLINE\n<lora:pony/clothing body/0064 translucent temptation_v1_pony.safetensors:1.0>,ruanyi0064,fishnet,bodysuit,no panties,nipples\n<lora:pony/clothing body/Rags__Slave_clothing_Lora_Pony-000006.safetensors:1.0>,torn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, <lora:pony/clothing body/scaredv4-000009.safetensors:1.0>,scared expression, tears, criying, pitch black background,full body,spread legs,terrified, peeing, exposed pussy, pis,\n<lora:pony/clothing body/Rags__Slave_clothing_Lora_Pony-000006.safetensors:1.0>,torn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, <lora:pony/clothing body/scaredv4-000009.safetensors:1.0>,scared expression, tears, criying, pitch black background,full body,spread legs,\n<lora:pony/clothing body/translucent_bunnysuit_v0.1-pony.safetensors:1.0>,Jed-bny, Black Bodysuit, Bunny Ears Headband, White Collar, Black Bow Tie, Fishnet Stockings, Black Heels, White Bunny Tail ,White Gloves\n<lora:pony/clothing body/china dress_Pony_V1.0.safetensors:1.0>,jyojifuku, china dress, skirt\n<lora:pony/clothing/sexy lingerie_V1.0.safetensors:1.0>,sexy lingerie, underwear, see-through\n<lora:pony/clothing/0325 printed transparent cheongsam_v1_pony.safetensors:1.0>,ruanyi0325,see-through dress,nipples,pelvic curtain,side slit,bottomless,short sleeves,china dress,star print,\nmaid apron, maid, maid headdress, thighhighs, wrist cuffs, 1girl, high heels, kneeling, side view, exposed breast,maid\n<lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater, <lora:pony/poses/folded double v.safetensors:1.0>,folded double v, spread legs, legs up, double v\n<lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up\n<lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties,aran sweater, kneeling, smiling, looking up, looking at viewer, from above,drooling\n<lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, <lora:pony/poses/toro_ahe_pony.safetensors:1.0>,exhausted, pleasure, embarrassed, open mouth, tongue out, blush, sweat, saliva, fucked silly,ahegao, full body, spread legs,\n<lora:pony/poses/virgin_destroyer_sweaterPony.safetensors:1.0>,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, \na young girl with long white hair and green eyes. She is wearing a red bikini and is sitting on the floor with her legs spread apart. The girl is holding a red heart-shaped balloon with the words \"Will you be my Valentine?\" written on it. The background is a light pink color.\n<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up,panties,\n<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,mating press,matingpress, mating_press,testicles,from behind, looking at viewer, uncensored, pussy,penis, man on top\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,mating press,matingpress,on back, testicles,from behind, looking at viewer, uncensored, pussy,penis,\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>mating press, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, lilandavastyle, Expressiveh, imminent sex, mating press, from below, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below,\n<lora:pony/poses/BDSM.safetensors:1.0>,bound,bdsm,bondage,gag,gagged,bound wrists,improvised gag,bound legs,underwear,rope,bound ankles,bound arms,restrained,shibari,cuffs,spread legs,\n<lora:pony/poses/peeing_with_one_leg_up_XL_pony.safetensors:1.0>,petplay, one leg up, put both hands on ground,<lora:pony/styles/<lora:pony/styles/Expressive_H-000001.safetensors:1.0>:1.0>,ExpressiveH,exhibitionism, leash, piss, pee, peeing\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes,  criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3\n<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,(frontal, from the front)\n<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,sideview\nspread legs, panty, gasping for hair, on bed, sexy, detailed clothing,\n<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\nnipples and pussy visible, detailed pussy, perfect pussy, ahegao, rolling eyes, extremely stretched pussy, big stomach bulge, balls deep, extremely detailed stomach bulge, penis outline stomach bulge, cum pool, excessice cum, massive creampie, size difference, impossible fit, <lora:pony/poses/Extremely_detailed_stomach_bulge.safetensors:0.8>\n(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus, <lora:pony/poses/skirtlift_both_view.safetensors:0.5>, micro skirt, skirt\n(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, <lora:cum-inflation-ponyxl-lora-nochekaiser:1>, cum inflation, inflation, big belly, excessive cum, cum overflow, cum, rolling eyes,ahegao, cum in nose, ejaculation, cum in mouth, cervical penetration, sex, \n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, \n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,(pregnant:1.2)\nsex_machine,<lora:pony/poses/sex machine pony V1.0.safetensors:1.0>,sex machine, restrained, bound, bdsm, stationary restraints, milking machinetube,cable,blindfold,object insertion, sex toy,  mind control, corruption,gagged,machine,forced orgasm\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, anal juice, anal, (anal dildo riding), (stomach bulge)\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,Dildo_RIDING, dildo_riding,dildo,huge_dildo,belly_buldge,dildo riding, dildo, spread legs, squatting, pussy juice\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>,extreme_insertion,dildo_riding,dildo,huge_dildo\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, x-ray\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, (sideways:2)\nextreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (facing_away:2), (anal:1.2), anal_expansion,squatting on a dildo in the floor\nextreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (anal:1.2), anal_expansion,squatting on a dildo in the floor, (frontview:1.2)\nnaked, spread_legs, vagina_visible, facing_viewer, explicit, solo, ((spreading_own_pussy))\npeeing, ahegao, broken expression, ((after_rape)),((1girl)),((solo)), after_sex, bed, spread_legs, spread_arms\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, nude,1boy,vaginal,reverse suspended congress,extreme_insertion,(((huge_penis))),stomach bulge,uncensored,large_insertion,(extreme_insertion:1.5),(stomach bulge)\nlooking back, closeup, from below, low angle, spread ass, naughty_face, blush, parted lips, half-closed_eyes\nmissionary, vaginal penetration, 1boy, chocking, ahegao, panty to the side, sideview, belly buldge, deep penetration, extreme insertion, xray, <lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1.0>\nreversed cowgirl, cowgirl, woman facing away from viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, small ass\nreversed cowgirl, cowgirl, woman facing away from viewer, pov, small ass\nbending over, legs apart, straight legs, view from behind, ass focus, outdoors, beautiful, source_anime, doing the splits, exposed vagina, exposed breasts, small tight ass, teardrop breasts,(face down ass up:1.5)\nvagina focus, naked, happy, eager, ass raised, head on ground, elbows on ground, legs bent:3, visible feet, visible ankles, bare feet, bent forward, torso upside down, presenting ass, anus, vagina upside down\npeeing, one leg up, wet, condom on thigs, ring of condoms,blushed, criying, thight pussy, multiple condoms,used condom,condom belt,condom\n(lowering pants), pulling down pants, hands on pants, naked breasts, perky breasts, sexy expression\nblushing, head down eyes up, (embarrassed:0.4), (worried:0.4), nose blush, lying on side, concentrating, in bedroom, stacks of textbooks, looking down, from front, front view, ass crack, anus, pussy slightly visible, pussy partially visible\n<lora:pony/poses/povsit.safetensors:1.0>, , from below, (povsit), spread legs, blue eyes, close-up, slingshot swimsuit, half-closed eyes, wet, dripping, sweaty,  looking at viewer, (blue sky background)\nround breasts, small breasts, breasts apart,legs behind head, legs up, chained to a column by the feet, slim, excessive Pussy juice drips into bucket, bucket under girl, fantasy, from_below,looking down at pussy, young\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom\nrear view, ass focus, beautiful pussy (creampie) cumdrip from pussy, anus, pajamas, panties pull, girl sleeping lying on her side,1girl\npussy,masturbate,from below,(pussy focus:1.1),nude,spread legs,between_legs,blush\nman hands pressing boobs, male pov, boobjob\nno panties, naked pussy, knees together, feet apart, looking in the window slight blush, ((butt plug visible))\n<lora:milkmachine:1.0> sexy, charming, alluring, seductive, erotic, enchanting, (rope, shibari, lactation, milking machine:1.2),breasts out, arms up, sweat, pussy,perfect female body, lora:\ntopless, looking at viewer, standing, leaning forward, v, sticking tongue out, warm smile, beautiful, natural, cute, ponytail, light-brown hair, (blue and white striped cotton panties:1.2), (stripes pattern:1.4)\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom,legs up,spread legs,<lora:0687 public indecency_v1_pony:1>\nbig witch hat, ashamed, covering her eyes with the hat, blushed, blush, naked, small smile, covered eyes, hiden eyes, covering privates with hand, grabing hat with one hand\n(solo focus:1.5), (sex looking at viewer, heart-shaped pupils:1.5), (floating hearts,:1.5), (licking lips, closed mouth tongue out:1.3), (sex looking at viewer, holding legs, legs up:1.5), pussy, perfect pussy, realistic pussy, clitoris, nipples, perfect nipples, spread legs, ecstasy((Orgasm, gaspingm)), vocal, (moaning, screaming:1.1), seductive smile, smile, Sensual face, motion blur, embarrassed, blush, (anal sex, anal penetration:1.2), (missionary sex, lying, from above:1.2), show pussy, (cum in pussy, cum in anus, excessive cum:1.3), pov, (ass, anus:1.3), 1man, 1girl\n2girl, seraphine having sex with her twin with her massive futanari horse cock, front view,futa, futanari, deep penetration, standing up, arms grab, multiple penises, anal sex, from behind, arm grab, deep insertion, deep penetration, belly buldge, extreme insertion, criying, dripping cum from pussy, dripping cum from dick,<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1.0>\n(shiny skin), hanging breasts,long hair,huge breasts, (medieval city background), medieval marketplace,(pillorypose), pillory, standing, fellatio, deepthroat, head grab, looking up, expressionless\n1futa, small detailed cock, 20 year old, 1male out of frame, looking up lustfully, blush on nose, smug, luxurious pool, poolside, squatting on the floor against wall, masturbating cock, cumming from masturbating, riding anal glass dildo, deepthroat, headpush, rough , saliva dripping from mouth, volumetric lighting, vibrant colors, full body shot, lilandavastyle, OverallDetail, Expressiveh, depth of field,g0thicPXL, glowing, neon\npulling top off dress down to reveal breasts, bra untied, cupping breasts with hands, nipple slip, off shoulder, pulling skirt up, show panties,, midriff, narrow hips,((exposed pussy)) smiling, blush, looking at viewer, expressiveh\nonsen, steam, partially submerged, looking up, light smile, spread arms, short blonde hair, gr33n, plant, flower, relaxed, eyes closed, foliage, mountain in distance, head back\nnaughty face, Expressiveh, ((((vaginal sex, cum inside pussy, cumming, big natural boobs)))),drooling, tongue out, looking up, wodeipoi, HolliW\nmassive futanari cock, massive cock, massive hors dick, huge cock, huge dick, naked, stroking dick with both hand, semen, covered in semen, rolled up eyes, massive testicles, massive balls, stroking\nrape, criying, suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), looking back\nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), male fucking woman while choking her\n<lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>, excessive cum, looking back, kneeling, facial, cum on hair, cum in mouth, cum on body, bukkake, cum string,\n<lora:pony/poses/Proper_Grinding.safetensors:1.0>, grindsex, cowgirl position, penis, pussy, kneeling\n<lora:pony/poses/Proper_Grinding.safetensors:1.0>, grindsex, cowgirl position, penis, pussy, squatting\n<lora:pony/poses/10z_thighsex_pony_v1.safetensors:1.0>, thighsex, girl on top, legs together, pov, cum on thighs, ejaculation, erection, thigh focus, penis between thighs\n<lora:pony/poses/human_onahole.safetensors:0.8>, human onahole,torso grab, rough sex, stomach bulge\n<lora:pony/poses/lapfingering.safetensors:1.0>, lapfingering, sitting on lap,(faceless male), steam, (fully nude), (aroused), moaning, ahegao\n<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\n<lora:pony/poses/Concept_Cheek_bulge.safetensors:1.0>, cheek bulge, fellatio, 1girl, pov, penis\n<lora:pony/poses/Double_Penetration_LoRa__PonyXL-000031.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh,1girl, 2boys, 2penises, double penetration, anal, vaginal, mmf threesome, group sex\n<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora,tentacles,tentaclepitlora,pregnant,lactation,slime,sucction cups,tentacle pit\n<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora\nmasturbating, (arroused), taking a bath, bathub, a woman masturbating in a bathtub, <lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh, liying on bathtub, spread legs, dildo insertion,bathroom, bathtub, partially submerged, ambient lighting, A woman with long, soapy water, Her arms rest gently on the sides of the tub. The bathroom is adorned with candles,  and a large window that lets in natural light. The tiles are a soft, pastel color, and a few flower petals float on the water surface,\nDoggy style, male standing firmly behind female, female on all fours, back deeply arched, male's hands gripping her hips tightly, intense intimate connection, soft moaning\nMissionary position, male towering over female, female laying gracefully on her back, legs spread wide, male firmly holding one leg, their eyes locked in a deep, passionate gaze, close intimate contact\nCowgirl, female straddling confidently on top, male laying back with a calm expression, female's hands resting gently on his chest, she looks down with a soft smile, close intimate interaction, sensual movement\nReverse cowgirl, female facing away as she rides on top, male laying down relaxed, female leans back slightly, her hands placed on his thighs, intimate tension between them, subtle movement\nStanding doggy style, male standing behind with strong posture, female bent forward against a cold wall, her arms pressing against the surface, male's grip tight on her waist, passionate close contact, hot breath on neck\nSpooning, male's body curved behind female, both laying on their side in perfect harmony, male's hand gently placed on her hip, their bodies entwined in intimate warmth, soft whispers exchanged\nLegs over shoulders, male hovering over female with dominance, female laying back submissively, legs lifted over his strong shoulders, their connection deep and intense, fiery eye contact and intimate passion\nProne bone, female flat on her stomach, legs close together, male hovering on top, his grip firm on her shoulders, bodies pressed together in deep, rhythmic movement, intense connection\nAgainst the wall, male standing strong, female's body pressed tightly against the cold surface, legs wrapped around his waist, male supporting her hips, their faces close in an intimate embrace, deep connection\nSideways, both laying on their sides, male behind female, one of her legs raised gently, his hands caressing her hips, their bodies close and intimate, slow sensual connection\nBent over table, male standing with authority, female bent over a sturdy table, hands gripping the edge tightly, male's firm grip on her hips, intimate and deep connection, powerful dynamic\nKneeling, male kneeling behind female, his strong hands resting on her back, female on all fours, their bodies intimately close, quiet whispers of passion, rhythmic movement\nFace sitting, female confidently on top, straddling male's face, her hands resting softly on his chest, intimate and playful interaction, her quiet moans echoing\nLotus position, both seated, legs intertwined deeply, faces inches apart, male's arms wrapped around female, they hold each other close in an intimate embrace, eyes locked, shared breath\nFemale sitting on bed, legs spread confidently, one hand teasing between her legs, the other resting casually on her thigh, back slightly arched, soft moans escaping her lips, eyes closed in deep pleasure\nFemale kneeling with legs apart, one hand exploring between her legs, the other gripping her breast tightly, her head tilted back in an expression of pure ecstasy, intimate and intense\nFemale laying on her back, legs spread wide, one hand caressing herself, the other gripping the bed sheets firmly, her teeth gently biting her lower lip, soft moans in the air\nFemale standing against a cold wall, one leg raised, hand between her legs exploring with desire, eyes closed, leaning back against the surface, mouth open slightly in pleasure\nFemale on all fours, one hand teasing between her legs, back deeply arched, head turned to the side, eyes closed in intense pleasure, hips lifted high, seductive moans\nFemale sitting on the edge of a chair, legs spread wide, both hands exploring herself with confidence, head thrown back, her hair cascading down behind her, quiet moans filling the air\nFemale on her knees, one hand between her legs teasingly, the other gripping her breast firmly, her intense gaze locked on the viewer, a seductive smile on her lips\nFemale laying on her side, one leg lifted, hand teasing between her legs, the other resting gently on her breast, eyes closed, a soft moan escaping her lips, intimate atmosphere\nFemale bent over, legs spread confidently, one hand teasing between her legs, back arched, her hair cascading like silk, her expression seductively inviting\nFemale standing confidently, legs slightly apart, one hand between her legs, the other on her breast, biting her lip sensually, eyes locking in a seductive stare\nFemale sitting cross-legged, one hand teasing herself intimately, the other softly resting on her chest, eyes half-closed, lips parted, her intimate pleasure expressed subtly\nFemale on all fours, back arched deeply, using a toy with confidence, hips raised high, one hand holding the toy, the other supporting her body, eyes closed in intense pleasure\nFemale laying on her back, legs bent at the knees, both hands teasing between her legs, soft moans filling the air, eyes closed in an expression of ecstasy\nFemale squatting low, legs spread wide, one hand guiding a toy between her legs, seductive gaze, back arched, her hair falling around her shoulders, a soft moan escapes her lips\nFemale laying back, legs spread wide, using a vibrator, one hand holding it in place, the other gripping the sheets tightly, head tilted back in pure pleasure\nFemale sitting on her knees, holding a dildo with both hands, sliding it between her legs slowly, her eyes closed, mouth slightly open in a soft moan of pleasure\nFemale laying on her side, one leg raised, using a toy between her legs, the other hand resting softly on her breast, intense look of satisfaction on her face\nFemale sitting on a chair, legs spread wide confidently, using a vibrator teasingly, one hand guiding it between her legs, the other gripping the armrest, her back arched\nFemale standing with one leg propped on a chair, using a toy with precision, hand between her legs, other hand gripping her breast, her expression seductive and intense\nFemale on all fours, hips raised high, using a vibrating toy with confidence, one hand holding it in place, the other supporting her, eyes closed, her body rocking rhythmically\nFemale laying flat on her stomach, legs spread, using a toy teasingly behind her, one hand gripping it, her head resting on her arms, soft moans escaping\nFemale squatting low, using a dildo with a teasing smile, one hand guiding it between her legs, back arched, her hair framing her face seductively\nFemale sitting cross-legged, using a small vibrator between her legs confidently, one hand holding the toy, the other resting on her breast, her expression intense\nFemale kneeling, back arched deeply, using a toy between her legs, one hand holding it in place, the other teasing her breast, her head thrown back in pleasure\nFemale sitting on the edge of a bed, legs spread wide, using a vibrator with intense focus, one hand holding the toy in place, the other gripping her thigh\nFemale laying on her back, legs raised and spread wide, using a toy on herself with both hands gripping it firmly, head tilted back, her face expressing pure ecstasy\nFemale standing, leaning confidently against a wall, using a toy between her legs, one hand on the toy, the other gripping her breast, biting her lip seductively\nFemale sitting on her knees, using a toy behind her confidently, one hand gripping it, back arched, soft moans escaping her lips in rhythmic pleasure\nsexy girl, petite body, naked, face smeared with blood, beaten, scratches, bruised, small tight butt, pleasured look, sex, human penis, floating, human penis, big buff knights, hot knights, size difference, spitroast, deepthroat, double penetration, shiny skin, consensual, sex, rough sex, group sex, epic sex, tears, eyes looking up, head grab, cum on face, cum on breasts, cumming, arms tied behind back, background location, in knight camp, knights lair, wide shot dark cinematography, scary lighting, silhouette, dark and scary, volumetric lighting, shadows, source lights, speed lines, ((too crying girl, cry girl, crying girl)), deep sex, slave, collar\npaddingline"
+      ]
+    },
+    {
+      "id": 143,
+      "type": "Constant Number",
+      "pos": [
+        -860,
+        1180
+      ],
+      "size": [
+        315,
+        146
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "number_as_text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "number_as_text"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "NUMBER",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": []
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            242
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Constant Number"
+      },
+      "widgets_values": [
+        "integer",
+        149,
         ""
       ]
     },
     {
-      "id": 71,
-      "type": "CLIPTextEncode",
+      "id": 131,
+      "type": "Reroute",
       "pos": [
-        2130,
-        1530
+        1050,
+        1480
       ],
       "size": [
-        210,
-        54
+        75,
+        26
       ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 33,
+      "flags": {},
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 60
-        },
+          "name": "",
+          "type": "*",
+          "link": 174
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            301
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 132,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2730,
+        1560
+      ],
+      "size": [
+        480,
+        240
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 59,
+          "link": 179,
           "widget": {
             "name": "text"
           }
@@ -364,23 +530,59 @@
       ],
       "outputs": [
         {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            61
-          ],
-          "slot_index": 0,
-          "shape": 3
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
         }
       ],
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        ""
+        "",
+        "score_9, score_8_up, score_7_up, rating_explicit, source_anime, BREAK,,dfSna, cyan hair, gradient hair, twintails, very long hair, blue eyes, big breast,,,anime screencap,\n,,,mating press, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, lilandavastyle, Expressiveh, imminent sex, mating press, from below, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below,"
+      ]
+    },
+    {
+      "id": 151,
+      "type": "ShowText|pysssss",
+      "pos": [
+        780,
+        2200
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "size": [
+        490,
+        210
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 272,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "score_9, score_8_up, score_7_up, rating_explicit, source_anime, BREAK,,dfSna, cyan hair, gradient hair, twintails, very long hair, blue eyes, big breast,,<lora:pony/styles/modern_anime_screencap_v1_0.safetensors:1.0>,anime screencap,\n,<lora:pony/lol/defaultsona-pdxl-nvwls-v1.safetensors:0.7>,<lora:pony/poses/matingpressv0.2pony.safetensors:0.8>,<lora:pony/styles/Expressive_H-000001.safetensors:0.8>mating press, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, lilandavastyle, Expressiveh, imminent sex, mating press, from below, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below,"
+      ]
     },
     {
       "id": 68,
@@ -394,7 +596,7 @@
         86
       ],
       "flags": {},
-      "order": 31,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -452,178 +654,158 @@
       ]
     },
     {
-      "id": 75,
-      "type": "CR SDXL Aspect Ratio",
+      "id": 76,
+      "type": "CLIPTextEncode",
       "pos": [
-        2210,
-        1910
+        2130,
+        1440
       ],
       "size": [
-        315,
-        278
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "width",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            115
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "height",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            116
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "upscale_factor",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null
-        },
-        {
-          "name": "batch_size",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null
-        },
-        {
-          "name": "empty_latent",
-          "type": "LATENT",
-          "links": [
-            68
-          ],
-          "slot_index": 4
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "slot_index": 5
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR SDXL Aspect Ratio"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "custom",
-        "Off",
-        1,
-        1
-      ]
-    },
-    {
-      "id": 118,
-      "type": "CLIPSetLastLayer",
-      "pos": [
-        1850,
-        2090
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 147
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            167
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPSetLastLayer"
-      },
-      "widgets_values": [
-        -2
-      ]
-    },
-    {
-      "id": 135,
-      "type": "Note",
-      "pos": [
-        -850,
-        2670
-      ],
-      "size": [
-        510,
-        90
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "GARDEVOIR",
-      "properties": {},
-      "widgets_values": [
-        "https://civitai.com/models/383560\n<lora:pony/pokemon/gardevoir.safetensors:1.3>\n1girl, (gardevoir:1.4), green_hair, green_skin, hair_over_one_eye,(white_skin:1.3), garde, solo, pokemon_\\(creature\\),solo, highres, two-tone_skin, absurdres,white_skirt"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 134,
-      "type": "Note",
-      "pos": [
-        1310,
-        1830
-      ],
-      "size": [
-        420,
-        130
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "boleromixpony_v170.safetensors works really well! when used with gardevoir LORAs has a lilttle issues where many times skin comes as normal human instead of white."
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 93,
-      "type": "Image Saver",
-      "pos": [
-        2490,
-        2350
-      ],
-      "size": [
-        400,
-        742
+        210,
+        54
       ],
       "flags": {},
       "order": 38,
       "mode": 0,
       "inputs": [
         {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 70
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 71,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            72
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 71,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2130,
+        1530
+      ],
+      "size": [
+        210,
+        54
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 60
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 59,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            61
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 130,
+      "type": "Reroute",
+      "pos": [
+        1050,
+        1440
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 284
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            300
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 93,
+      "type": "Image Saver",
+      "pos": [
+        2560,
+        2500
+      ],
+      "size": [
+        400,
+        742
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
           "name": "images",
           "type": "IMAGE",
-          "link": 108
+          "link": 331
         },
         {
           "name": "steps",
@@ -728,81 +910,53 @@
       ]
     },
     {
-      "id": 92,
-      "type": "Reroute",
+      "id": 88,
+      "type": "Seed Generator (Image Saver)",
       "pos": [
-        1500,
-        1600
+        2160,
+        2940
       ],
       "size": [
-        75,
-        26
+        352.79998779296875,
+        82
       ],
       "flags": {},
-      "order": 30,
+      "order": 4,
       "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 281,
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
+      "inputs": [],
       "outputs": [
         {
-          "name": "",
-          "type": "STRING",
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
           "links": [
-            112,
-            124
+            107,
+            114
           ],
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 3
         }
       ],
       "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 136,
-      "type": "Note",
-      "pos": [
-        -920,
-        1850
-      ],
-      "size": [
-        220,
-        140
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
+        "Node name for S&R": "Seed Generator (Image Saver)"
+      },
       "widgets_values": [
-        "0.8 es lo normal"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+        1116216938997411,
+        "increment"
+      ]
     },
     {
       "id": 82,
       "type": "CR Combine Prompt",
       "pos": [
-        -10,
-        1880
+        90,
+        1850
       ],
       "size": [
         210,
         150
       ],
       "flags": {},
-      "order": 21,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -868,95 +1022,239 @@
       ]
     },
     {
-      "id": 88,
-      "type": "Seed Generator (Image Saver)",
+      "id": 66,
+      "type": "KSamplerAdvanced",
       "pos": [
-        2030,
-        2770
+        2360,
+        1420
       ],
       "size": [
-        352.79998779296875,
-        82
+        315,
+        334
       ],
       "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            107,
-            114
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Seed Generator (Image Saver)"
-      },
-      "widgets_values": [
-        1116216938991135,
-        "increment"
-      ]
-    },
-    {
-      "id": 131,
-      "type": "Reroute",
-      "pos": [
-        1200,
-        1550
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 26,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
-          "name": "",
-          "type": "*",
-          "link": 174
+          "name": "model",
+          "type": "MODEL",
+          "link": 133
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 72
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 61
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 68
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 107,
+          "widget": {
+            "name": "noise_seed"
+          }
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 150,
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 151,
+          "widget": {
+            "name": "steps"
+          }
         }
       ],
       "outputs": [
         {
-          "name": "",
-          "type": "STRING",
-          "links": [],
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            65
+          ],
           "slot_index": 0
         }
       ],
       "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        151676545722317,
+        "randomize",
+        20,
+        8,
+        "euler_ancestral",
+        "karras",
+        0,
+        10000,
+        "enable"
+      ]
     },
     {
-      "id": 132,
-      "type": "ShowText|pysssss",
+      "id": 73,
+      "type": "VAEDecode",
       "pos": [
-        2730,
-        1560
+        2270,
+        1810
       ],
       "size": [
-        480,
-        240
+        210,
+        46
       ],
-      "flags": {
-        "collapsed": false
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 65
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 66
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            331
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
       },
-      "order": 35,
+      "widgets_values": []
+    },
+    {
+      "id": 136,
+      "type": "Note",
+      "pos": [
+        -950,
+        1870
+      ],
+      "size": [
+        220,
+        140
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "0.8 es lo normal"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 154,
+      "type": "CR Prompt List",
+      "pos": [
+        -490,
+        1540
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiline_text",
+          "type": "STRING",
+          "link": 386,
+          "widget": {
+            "name": "multiline_text"
+          }
+        },
+        {
+          "name": "prepend_text",
+          "type": "STRING",
+          "link": 277,
+          "widget": {
+            "name": "prepend_text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            278
+          ],
+          "slot_index": 0,
+          "shape": 6
+        },
+        {
+          "name": "body_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Prompt List"
+      },
+      "widgets_values": [
+        "",
+        "body_text",
+        "",
+        0,
+        1000
+      ]
+    },
+    {
+      "id": 133,
+      "type": "Text Find and Replace",
+      "pos": [
+        -920,
+        1640
+      ],
+      "size": [
+        317.4000244140625,
+        166
+      ],
+      "flags": {},
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 179,
+          "link": 247,
           "widget": {
             "name": "text"
           }
@@ -964,149 +1262,84 @@
       ],
       "outputs": [
         {
-          "name": "STRING",
+          "name": "result_text",
           "type": "STRING",
-          "links": null,
-          "shape": 6
+          "links": [
+            386
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "replacement_count_number",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "replacement_count_float",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "replacement_count_int",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "ShowText|pysssss"
+        "Node name for S&R": "Text Find and Replace"
       },
       "widgets_values": [
         "",
-        "zPDXL3,score_9, score_8_up, score_7_up, rating_explicit, BREAK,,1girl, Sbkin, sheep girl, long hair, purple hair, braids, curved horns, pink eyes, ahoge,,\n,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes,  criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,"
+        ":1.0",
+        ":0.8"
       ]
     },
     {
-      "id": 87,
-      "type": "Int Literal (Image Saver)",
+      "id": 153,
+      "type": "Show any [Crystools]",
       "pos": [
-        2070,
-        2570
+        -10,
+        1270
       ],
       "size": [
-        315,
-        58
+        500,
+        148
       ],
       "flags": {},
-      "order": 5,
+      "order": 25,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "INT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            109,
-            151
-          ],
-          "slot_index": 0,
-          "shape": 3
+          "name": "any_value",
+          "type": "*",
+          "link": 274,
+          "shape": 7
         }
       ],
+      "outputs": [],
       "properties": {
-        "Node name for S&R": "Int Literal (Image Saver)"
-      },
-      "widgets_values": [
-        30
-      ]
+        "Node name for S&R": "Show any [Crystools]"
+      }
     },
     {
-      "id": 70,
-      "type": "CR Text",
+      "id": 193,
+      "type": "Note",
       "pos": [
-        1930,
-        1580
+        -730,
+        1870
       ],
       "size": [
-        400,
-        200
+        220,
+        140
       ],
       "flags": {},
       "order": 6,
       "mode": 0,
       "inputs": [],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "*",
-          "links": [
-            59,
-            113
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Text"
-      },
-      "widgets_values": [
-        "score_6, score_5, score_4, source_cartoon, \n3d, (censor),monochrome,blurry, lowres,watermark,embedding:easynegative"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 86,
-      "type": "Cfg Literal (Image Saver)",
-      "pos": [
-        2070,
-        2670
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "value",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            110,
-            150
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Cfg Literal (Image Saver)"
-      },
-      "widgets_values": [
-        5
-      ]
-    },
-    {
-      "id": 137,
-      "type": "Note",
-      "pos": [
-        510,
-        1260
-      ],
-      "size": [
-        400,
-        230
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "\nExpressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below, "
+        "anime: score_9, score_8_up, score_7_up, rating_explicit, source_anime, BREAK\nRealistm: score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up, photorealistic, realistic, BREAK"
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1115,15 +1348,15 @@
       "id": 72,
       "type": "Checkpoint Loader with Name (Image Saver)",
       "pos": [
-        1820,
-        1920
+        1830,
+        1900
       ],
       "size": [
         344.3999938964844,
         120
       ],
       "flags": {},
-      "order": 9,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1168,56 +1401,255 @@
         "Node name for S&R": "Checkpoint Loader with Name (Image Saver)"
       },
       "widgets_values": [
-        "pony/boleromixPony_v170.safetensors"
+        "pony/autismmixSDXL_autismmixPony.safetensors"
       ]
     },
     {
-      "id": 114,
-      "type": "CR Text",
+      "id": 129,
+      "type": "Note",
       "pos": [
-        450,
-        1080
+        -30,
+        2080
       ],
       "size": [
-        460,
-        150
+        400,
+        380
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "CAREFULL\n<lora:pony/lol/ZoeLoLXLbyKillerUwU13 AI.safetensors:1.0>\nISN'T THE SAME TO \n<lora:pony/lol/ZoeLoLXLbyKillerUwU13_AI.safetensors:1.0>\n\nTHE LORA TAG LOADER BRAKES WHEN IT FINDS THAT UNDERSCORE. AUTOCOMPLETE WILL REPLACE THE SPACE FOR A _\n\naparently sometimes capital letters matter?\n\nfor realism\n<lora:pony/styles/zy_Realism_Enhancer_v1.safetensors:0.3>\n\nfor anime:\n<lora:pony/styles/AnimeStyle2SDXLLoRAPonyDiffusionV6XL.safetensors:1.0>"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 137,
+      "type": "Note",
+      "pos": [
+        420,
+        1830
+      ],
+      "size": [
+        400,
+        230
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "\nExpressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below, "
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 135,
+      "type": "Note",
+      "pos": [
+        -780,
+        2830
+      ],
+      "size": [
+        510,
+        90
       ],
       "flags": {},
       "order": 10,
       "mode": 0,
       "inputs": [],
+      "outputs": [],
+      "title": "GARDEVOIR",
+      "properties": {},
+      "widgets_values": [
+        "https://civitai.com/models/383560\n<lora:pony/pokemon/gardevoir.safetensors:1.3>\n1girl, (gardevoir:1.4), green_hair, green_skin, hair_over_one_eye,(white_skin:1.3), garde, solo, pokemon_\\(creature\\),solo, highres, two-tone_skin, absurdres,white_skirt"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 159,
+      "type": "Switch any [Crystools]",
+      "pos": [
+        1180,
+        1460
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_true",
+          "type": "*",
+          "link": 300
+        },
+        {
+          "name": "on_false",
+          "type": "*",
+          "link": 301
+        }
+      ],
       "outputs": [
         {
-          "name": "text",
+          "name": "*",
           "type": "*",
           "links": [
-            166
+            297
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Switch any [Crystools]"
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 192,
+      "type": "Note",
+      "pos": [
+        -210,
+        2850
+      ],
+      "size": [
+        1090,
+        340
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "BROKEN/TODO",
+      "properties": {},
+      "widgets_values": [
+        "BROKEN:\npony/clothing/0325 printed transparent cheongsam_v1_pony.safetensors"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 86,
+      "type": "Cfg Literal (Image Saver)",
+      "pos": [
+        2170,
+        2810
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            110,
+            150
           ],
           "slot_index": 0,
           "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Cfg Literal (Image Saver)"
+      },
+      "widgets_values": [
+        7
+      ]
+    },
+    {
+      "id": 75,
+      "type": "CR SDXL Aspect Ratio",
+      "pos": [
+        2210,
+        1910
+      ],
+      "size": [
+        315,
+        278
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            115
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            116
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "batch_size",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": [
+            68
+          ],
+          "slot_index": 4
         },
         {
           "name": "show_help",
           "type": "STRING",
           "links": null,
-          "shape": 3
+          "slot_index": 5
         }
       ],
       "properties": {
-        "Node name for S&R": "CR Text"
+        "Node name for S&R": "CR SDXL Aspect Ratio"
       },
       "widgets_values": [
-        ""
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
+        832,
+        1216,
+        "1:1 square 1024x1024",
+        "Off",
+        1,
+        1
+      ]
     },
     {
       "id": 85,
       "type": "CR Text",
       "pos": [
-        -520,
-        1850
+        -490,
+        1810
       ],
       "size": [
         400,
@@ -1226,7 +1658,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 11,
+      "order": 14,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1250,304 +1682,22 @@
         "Node name for S&R": "CR Text"
       },
       "widgets_values": [
-        "zPDXL3,score_9, score_8_up, score_7_up, rating_explicit, BREAK"
+        "score_9, score_8_up, score_7_up, rating_explicit, source_anime, BREAK"
       ]
     },
     {
-      "id": 133,
-      "type": "Text Find and Replace",
-      "pos": [
-        -920,
-        1640
-      ],
-      "size": [
-        317.4000244140625,
-        166
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 247,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "result_text",
-          "type": "STRING",
-          "links": [
-            276
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "replacement_count_number",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null
-        },
-        {
-          "name": "replacement_count_float",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null
-        },
-        {
-          "name": "replacement_count_int",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Text Find and Replace"
-      },
-      "widgets_values": [
-        "",
-        ":1.0",
-        ":0.8"
-      ]
-    },
-    {
-      "id": 143,
-      "type": "Constant Number",
-      "pos": [
-        -860,
-        1150
-      ],
-      "size": [
-        315,
-        146
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "number_as_text",
-          "type": "STRING",
-          "link": null,
-          "widget": {
-            "name": "number_as_text"
-          },
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "NUMBER",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": []
-        },
-        {
-          "name": "FLOAT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [
-            242
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "INT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Constant Number"
-      },
-      "widgets_values": [
-        "integer",
-        135,
-        ""
-      ]
-    },
-    {
-      "id": 153,
-      "type": "Show any [Crystools]",
-      "pos": [
-        -20,
-        1220
-      ],
-      "size": [
-        453.5999755859375,
-        148
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "any_value",
-          "type": "*",
-          "link": 274,
-          "shape": 7
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "Show any [Crystools]"
-      }
-    },
-    {
-      "id": 49,
-      "type": "CR Prompt Text",
-      "pos": [
-        -3740,
-        1630
-      ],
-      "size": [
-        2670,
-        1000
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "prompt",
-          "type": "STRING",
-          "links": [
-            247
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Prompt Text"
-      },
-      "widgets_values": [
-        "DONOTTOUCHTHISLINE\n<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up,panties,\n<lora:pony/poses/bestlegsuppony.safetensors:1.0>,best_legs_up\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,mating press,matingpress, mating_press,testicles,from behind, looking at viewer, uncensored, pussy,penis, man on top\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,mating press,matingpress,on back, testicles,from behind, looking at viewer, uncensored, pussy,penis,\n<lora:pony/poses/matingpressv0.2pony.safetensors:1.0>,<lora:pony/styles/Expressive H-000001.safetensors:1.0>mating press, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, lilandavastyle, Expressiveh, imminent sex, mating press, from below, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, Expressiveh, imminent sex, mating press, from below,\n<lora:pony/poses/BDSM.safetensors:1.0>,bound,bdsm,bondage,gag,gagged,bound wrists,improvised gag,bound legs,underwear,rope,bound ankles,bound arms,restrained,shibari,cuffs,spread legs,\n<lora:pony/poses/peeing_with_one_leg_up_XL_pony.safetensors:1.0>,petplay, one leg up, put both hands on ground,<lora:pony/styles/Expressive H-000001.safetensors:1.0>,ExpressiveH,exhibitionism, leash, piss, pee, peeing\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes,  criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:1.0>,Doggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3\n<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,(frontal, from the front)\n<lora:pony/poses/Doggystyle.safetensors:1.2>,palidoggy,sideview\nspread legs, panty, gasping for hair, on bed, sexy, detailed clothing,\n<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\nnipples and pussy visible, detailed pussy, perfect pussy, ahegao, rolling eyes, extremely stretched pussy, big stomach bulge, balls deep, extremely detailed stomach bulge, penis outline stomach bulge, cum pool, excessice cum, massive creampie, size difference, impossible fit, <lora:pony/poses/Extremely_detailed_stomach_bulge.safetensors:0.8>\n(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus, <lora:pony/poses/skirtlift_both_view.safetensors:0.5>, micro skirt, skirt\n(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, <lora:cum-inflation-ponyxl-lora-nochekaiser:1>, cum inflation, inflation, big belly, excessive cum, cum overflow, cum, rolling eyes,ahegao, cum in nose, ejaculation, cum in mouth, cervical penetration, sex, \n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, <lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>excessive cum, cumflation, ahegao, \n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice,(pregnant:1.2)\nsex_machine,<lora:pony/poses/sex machine pony V1.0.safetensors:1.0>,sex machine, restrained, bound, bdsm, stationary restraints, milking machinetube,cable,blindfold,object insertion, sex toy,  mind control, corruption,gagged,machine,forced orgasm\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, anal juice, anal, (anal dildo riding), (stomach bulge)\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,dildo riding, dildo, spread legs, squatting, pussy juice\n<lora:dildi-riding-ponyxl-lora-nochekaiser:1>,Dildo_RIDING, dildo_riding,dildo,huge_dildo,belly_buldge,dildo riding, dildo, spread legs, squatting, pussy juice\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>,extreme_insertion,dildo_riding,dildo,huge_dildo\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, x-ray\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, ,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, (sideways:2)\nextreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (facing_away:2), (anal:1.2), anal_expansion,squatting on a dildo in the floor\nextreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (anal:1.2), anal_expansion,squatting on a dildo in the floor, (frontview:1.2)\nnaked, spread_legs, vagina_visible, facing_viewer, explicit, solo, ((spreading_own_pussy))\npeeing, ahegao, broken expression, ((after_rape)),((1girl)),((solo)), after_sex, bed, spread_legs, spread_arms\n<lora:pony/poses/extreme insertion ponyXL v1.2.safetensors:1>, nude,1boy,vaginal,reverse suspended congress,extreme_insertion,(((huge_penis))),stomach bulge,uncensored,large_insertion,(extreme_insertion:1.5),(stomach bulge)\nlooking back, closeup, from below, low angle, spread ass, naughty_face, blush, parted lips, half-closed_eyes\nmissionary, vaginal penetration, 1boy, chocking, ahegao, panty to the side, sideview, belly buldge, deep penetration, extreme insertion, xray, <lora:pony/poses/extreme_insertion_ponyXL_v1.2.safetensors:1>\nreversed cowgirl, cowgirl, woman facing away from viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, small ass\nreversed cowgirl, cowgirl, woman facing away from viewer, pov, small ass\nbending over, legs apart, straight legs, view from behind, ass focus, outdoors, beautiful, source_anime, doing the splits, exposed vagina, exposed breasts, small tight ass, teardrop breasts,(face down ass up:1.5)\nvagina focus, naked, happy, eager, ass raised, head on ground, elbows on ground, legs bent:3, visible feet, visible ankles, bare feet, bent forward, torso upside down, presenting ass, anus, vagina upside down\npeeing, one leg up, wet, condom on thigs, ring of condoms,blushed, criying, thight pussy, multiple condoms,used condom,condom belt,condom\n(lowering pants), pulling down pants, hands on pants, naked breasts, perky breasts, sexy expression\nblushing, head down eyes up, (embarrassed:0.4), (worried:0.4), nose blush, lying on side, concentrating, in bedroom, stacks of textbooks, looking down, from front, front view, ass crack, anus, pussy slightly visible, pussy partially visible\n<lora:pony/poses/povsit.safetensors:1.0>, , from below, (povsit), spread legs, blue eyes, close-up, slingshot swimsuit, half-closed eyes, wet, dripping, sweaty,  looking at viewer, (blue sky background)\nround breasts, small breasts, breasts apart,legs behind head, legs up, chained to a column by the feet, slim, excessive Pussy juice drips into bucket, bucket under girl, fantasy, from_below,looking down at pussy, young\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom\nrear view, ass focus, beautiful pussy (creampie) cumdrip from pussy, anus, pajamas, panties pull, girl sleeping lying on her side,1girl\npussy,masturbate,from below,(pussy focus:1.1),nude,spread legs,between_legs,blush\nman hands pressing boobs, male pov, boobjob\nno panties, naked pussy, knees together, feet apart, looking in the window slight blush, ((butt plug visible))\n<lora:milkmachine:1.0> sexy, charming, alluring, seductive, erotic, enchanting, (rope, shibari, lactation, milking machine:1.2),breasts out, arms up, sweat, pussy,perfect female body, lora:\ntopless, looking at viewer, standing, leaning forward, v, sticking tongue out, warm smile, beautiful, natural, cute, ponytail, light-brown hair, (blue and white striped cotton panties:1.2), (stripes pattern:1.4)\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom,legs up,spread legs,<lora:0687 public indecency_v1_pony:1>\nbig witch hat, ashamed, covering her eyes with the hat, blushed, blush, naked, small smile, covered eyes, hiden eyes, covering privates with hand, grabing hat with one hand\n(solo focus:1.5), (sex looking at viewer, heart-shaped pupils:1.5), (floating hearts,:1.5), (licking lips, closed mouth tongue out:1.3), (sex looking at viewer, holding legs, legs up:1.5), pussy, perfect pussy, realistic pussy, clitoris, nipples, perfect nipples, spread legs, ecstasy((Orgasm, gaspingm)), vocal, (moaning, screaming:1.1), seductive smile, smile, Sensual face, motion blur, embarrassed, blush, (anal sex, anal penetration:1.2), (missionary sex, lying, from above:1.2), show pussy, (cum in pussy, cum in anus, excessive cum:1.3), pov, (ass, anus:1.3), 1man, 1girl\n2girl, seraphine having sex with her twin with her massive futanari horse cock, front view,futa, futanari, deep penetration, standing up, arms grab, multiple penises, anal sex, from behind, arm grab, deep insertion, deep penetration, belly buldge, extreme insertion, criying, dripping cum from pussy, dripping cum from dick,<lora:pony/poses/extreme_insertion_ponyXL_v1.2.safetensors:1.0>\n(shiny skin), hanging breasts,long hair,huge breasts, (medieval city background), medieval marketplace,(pillorypose), pillory, standing, fellatio, deepthroat, head grab, looking up, expressionless\n1futa, small detailed cock, 20 year old, 1male out of frame, looking up lustfully, blush on nose, smug, luxurious pool, poolside, squatting on the floor against wall, masturbating cock, cumming from masturbating, riding anal glass dildo, deepthroat, headpush, rough , saliva dripping from mouth, volumetric lighting, vibrant colors, full body shot, lilandavastyle, OverallDetail, Expressiveh, depth of field,g0thicPXL, glowing, neon\npulling top off dress down to reveal breasts, bra untied, cupping breasts with hands, nipple slip, off shoulder, pulling skirt up, show panties,, midriff, narrow hips,((exposed pussy)) smiling, blush, looking at viewer, expressiveh\nonsen, steam, partially submerged, looking up, light smile, spread arms, short blonde hair, gr33n, plant, flower, relaxed, eyes closed, foliage, mountain in distance, head back\nnaughty face, Expressiveh, ((((vaginal sex, cum inside pussy, cumming, big natural boobs)))),drooling, tongue out, looking up, wodeipoi, HolliW\nmassive futanari cock, massive cock, massive hors dick, huge cock, huge dick, naked, stroking dick with both hand, semen, covered in semen, rolled up eyes, massive testicles, massive balls, stroking\nrape, criying, suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), looking back\nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), male fucking woman while choking her\n<lora:pony/poses/extreme_bukkake_v0.1-pony.safetensors:1.0>, excessive cum, looking back, kneeling, facial, cum on hair, cum in mouth, cum on body, bukkake, cum string,\n<lora:pony/poses/Proper_Grinding.safetensors:1.0>, grindsex, cowgirl position, penis, pussy, kneeling\n<lora:pony/poses/Proper_Grinding.safetensors:1.0>, grindsex, cowgirl position, penis, pussy, squatting\n<lora:pony/poses/10z_thighsex_pony_v1.safetensors:1.0>, thighsex, girl on top, legs together, pov, cum on thighs, ejaculation, erection, thigh focus, penis between thighs\n<lora:pony/poses/human_onahole.safetensors:0.8>, human onahole,torso grab, rough sex, stomach bulge\n<lora:pony/poses/lapfingering.safetensors:1.0>, lapfingering, sitting on lap,(faceless male), steam, (fully nude), (aroused), moaning, ahegao\n<lora:pony/poses/lycoris/condom_filling-dropout.safetensors:1.0>, penis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\n<lora:pony/poses/Concept_Cheek_bulge.safetensors:1.0>, cheek bulge, fellatio, 1girl, pov, penis\n<lora:pony/poses/Double_Penetration_LoRa__PonyXL-000031.safetensors:1.0>,<lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh,1girl, 2boys, 2penises, double penetration, anal, vaginal, mmf threesome, group sex\n<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora,tentacles,tentaclepitlora,pregnant,lactation,slime,sucction cups,tentacle pit\n<lora:pony/poses/tentacle_pit-000010.safetensors:1.0>, tentaclepitlora\nmasturbating, (arroused), taking a bath, bathub, a woman masturbating in a bathtub, <lora:pony/styles/Expressive_H-000001.safetensors:1.0>, Expressiveh, liying on bathtub, spread legs, dildo insertion,bathroom, bathtub, partially submerged, ambient lighting, A woman with long, soapy water, Her arms rest gently on the sides of the tub. The bathroom is adorned with candles,  and a large window that lets in natural light. The tiles are a soft, pastel color, and a few flower petals float on the water surface,\nDoggy style, male standing firmly behind female, female on all fours, back deeply arched, male's hands gripping her hips tightly, intense intimate connection, soft moaning\nMissionary position, male towering over female, female laying gracefully on her back, legs spread wide, male firmly holding one leg, their eyes locked in a deep, passionate gaze, close intimate contact\nCowgirl, female straddling confidently on top, male laying back with a calm expression, female's hands resting gently on his chest, she looks down with a soft smile, close intimate interaction, sensual movement\nReverse cowgirl, female facing away as she rides on top, male laying down relaxed, female leans back slightly, her hands placed on his thighs, intimate tension between them, subtle movement\nStanding doggy style, male standing behind with strong posture, female bent forward against a cold wall, her arms pressing against the surface, male's grip tight on her waist, passionate close contact, hot breath on neck\nSpooning, male's body curved behind female, both laying on their side in perfect harmony, male's hand gently placed on her hip, their bodies entwined in intimate warmth, soft whispers exchanged\nLegs over shoulders, male hovering over female with dominance, female laying back submissively, legs lifted over his strong shoulders, their connection deep and intense, fiery eye contact and intimate passion\nProne bone, female flat on her stomach, legs close together, male hovering on top, his grip firm on her shoulders, bodies pressed together in deep, rhythmic movement, intense connection\nAgainst the wall, male standing strong, female's body pressed tightly against the cold surface, legs wrapped around his waist, male supporting her hips, their faces close in an intimate embrace, deep connection\nSideways, both laying on their sides, male behind female, one of her legs raised gently, his hands caressing her hips, their bodies close and intimate, slow sensual connection\nBent over table, male standing with authority, female bent over a sturdy table, hands gripping the edge tightly, male's firm grip on her hips, intimate and deep connection, powerful dynamic\nKneeling, male kneeling behind female, his strong hands resting on her back, female on all fours, their bodies intimately close, quiet whispers of passion, rhythmic movement\nFace sitting, female confidently on top, straddling male's face, her hands resting softly on his chest, intimate and playful interaction, her quiet moans echoing\nLotus position, both seated, legs intertwined deeply, faces inches apart, male's arms wrapped around female, they hold each other close in an intimate embrace, eyes locked, shared breath\nFemale sitting on bed, legs spread confidently, one hand teasing between her legs, the other resting casually on her thigh, back slightly arched, soft moans escaping her lips, eyes closed in deep pleasure\nFemale kneeling with legs apart, one hand exploring between her legs, the other gripping her breast tightly, her head tilted back in an expression of pure ecstasy, intimate and intense\nFemale laying on her back, legs spread wide, one hand caressing herself, the other gripping the bed sheets firmly, her teeth gently biting her lower lip, soft moans in the air\nFemale standing against a cold wall, one leg raised, hand between her legs exploring with desire, eyes closed, leaning back against the surface, mouth open slightly in pleasure\nFemale on all fours, one hand teasing between her legs, back deeply arched, head turned to the side, eyes closed in intense pleasure, hips lifted high, seductive moans\nFemale sitting on the edge of a chair, legs spread wide, both hands exploring herself with confidence, head thrown back, her hair cascading down behind her, quiet moans filling the air\nFemale on her knees, one hand between her legs teasingly, the other gripping her breast firmly, her intense gaze locked on the viewer, a seductive smile on her lips\nFemale laying on her side, one leg lifted, hand teasing between her legs, the other resting gently on her breast, eyes closed, a soft moan escaping her lips, intimate atmosphere\nFemale bent over, legs spread confidently, one hand teasing between her legs, back arched, her hair cascading like silk, her expression seductively inviting\nFemale standing confidently, legs slightly apart, one hand between her legs, the other on her breast, biting her lip sensually, eyes locking in a seductive stare\nFemale sitting cross-legged, one hand teasing herself intimately, the other softly resting on her chest, eyes half-closed, lips parted, her intimate pleasure expressed subtly\nFemale on all fours, back arched deeply, using a toy with confidence, hips raised high, one hand holding the toy, the other supporting her body, eyes closed in intense pleasure\nFemale laying on her back, legs bent at the knees, both hands teasing between her legs, soft moans filling the air, eyes closed in an expression of ecstasy\nFemale squatting low, legs spread wide, one hand guiding a toy between her legs, seductive gaze, back arched, her hair falling around her shoulders, a soft moan escapes her lips\nFemale laying back, legs spread wide, using a vibrator, one hand holding it in place, the other gripping the sheets tightly, head tilted back in pure pleasure\nFemale sitting on her knees, holding a dildo with both hands, sliding it between her legs slowly, her eyes closed, mouth slightly open in a soft moan of pleasure\nFemale laying on her side, one leg raised, using a toy between her legs, the other hand resting softly on her breast, intense look of satisfaction on her face\nFemale sitting on a chair, legs spread wide confidently, using a vibrator teasingly, one hand guiding it between her legs, the other gripping the armrest, her back arched\nFemale standing with one leg propped on a chair, using a toy with precision, hand between her legs, other hand gripping her breast, her expression seductive and intense\nFemale on all fours, hips raised high, using a vibrating toy with confidence, one hand holding it in place, the other supporting her, eyes closed, her body rocking rhythmically\nFemale laying flat on her stomach, legs spread, using a toy teasingly behind her, one hand gripping it, her head resting on her arms, soft moans escaping\nFemale squatting low, using a dildo with a teasing smile, one hand guiding it between her legs, back arched, her hair framing her face seductively\nFemale sitting cross-legged, using a small vibrator between her legs confidently, one hand holding the toy, the other resting on her breast, her expression intense\nFemale kneeling, back arched deeply, using a toy between her legs, one hand holding it in place, the other teasing her breast, her head thrown back in pleasure\nFemale sitting on the edge of a bed, legs spread wide, using a vibrator with intense focus, one hand holding the toy in place, the other gripping her thigh\nFemale laying on her back, legs raised and spread wide, using a toy on herself with both hands gripping it firmly, head tilted back, her face expressing pure ecstasy\nFemale standing, leaning confidently against a wall, using a toy between her legs, one hand on the toy, the other gripping her breast, biting her lip seductively\nFemale sitting on her knees, using a toy behind her confidently, one hand gripping it, back arched, soft moans escaping her lips in rhythmic pleasure\nsexy girl, petite body, naked, face smeared with blood, beaten, scratches, bruised, small tight butt, pleasured look, sex, human penis, floating, human penis, big buff knights, hot knights, size difference, spitroast, deepthroat, double penetration, shiny skin, consensual, sex, rough sex, group sex, epic sex, tears, eyes looking up, head grab, cum on face, cum on breasts, cumming, arms tied behind back, background location, in knight camp, knights lair, wide shot dark cinematography, scary lighting, silhouette, dark and scary, volumetric lighting, shadows, source lights, speed lines, ((too crying girl, cry girl, crying girl)), deep sex, slave, collar\npaddingline"
-      ]
-    },
-    {
-      "id": 151,
-      "type": "ShowText|pysssss",
-      "pos": [
-        540,
-        1710
-      ],
-      "size": [
-        490,
-        210
-      ],
-      "flags": {},
-      "order": 28,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 272,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 6
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "",
-        "zPDXL3,score_9, score_8_up, score_7_up, rating_explicit, BREAK,,1girl, Sbkin, sheep girl, long hair, purple hair, braids, curved horns, pink eyes, ahoge,<lora:pony/lol/Spirit_blossom_Kindred-000006.safetensors:1.0>,\n<lora:pony/poses/Doggystyle_Pov_2.0.safetensors:0.8>,Doggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes,  criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,"
-      ]
-    },
-    {
-      "id": 154,
-      "type": "CR Prompt List",
-      "pos": [
-        -490,
-        1550
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "multiline_text",
-          "type": "STRING",
-          "link": 276,
-          "widget": {
-            "name": "multiline_text"
-          }
-        },
-        {
-          "name": "prepend_text",
-          "type": "STRING",
-          "link": 277,
-          "widget": {
-            "name": "prepend_text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "prompt",
-          "type": "STRING",
-          "links": [
-            278
-          ],
-          "shape": 6,
-          "slot_index": 0
-        },
-        {
-          "name": "body_text",
-          "type": "STRING",
-          "links": null,
-          "shape": 6
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Prompt List"
-      },
-      "widgets_values": [
-        "",
-        "body_text",
-        "",
-        0,
-        1000
-      ]
-    },
-    {
-      "id": 84,
+      "id": 70,
       "type": "CR Text",
       "pos": [
-        -520,
-        2340
+        1810,
+        1600
       ],
       "size": [
         400,
         200
       ],
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1555,7 +1705,8 @@
           "name": "text",
           "type": "*",
           "links": [
-            87
+            59,
+            113
           ],
           "slot_index": 0,
           "shape": 3
@@ -1571,7 +1722,77 @@
         "Node name for S&R": "CR Text"
       },
       "widgets_values": [
-        "1girl, Sbkin, sheep girl, long hair, purple hair, braids, curved horns, pink eyes, ahoge"
+        "score_6, score_5, score_4, \n(censor),monochrome,blurry, lowres,watermark, hands,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 158,
+      "type": "Reroute",
+      "pos": [
+        -510,
+        1320
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 291
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 87,
+      "type": "Int Literal (Image Saver)",
+      "pos": [
+        2220,
+        2690
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            109,
+            151
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int Literal (Image Saver)"
+      },
+      "widgets_values": [
+        30
       ]
     },
     {
@@ -1582,11 +1803,11 @@
         2100
       ],
       "size": [
-        540,
-        190
+        550,
+        300
       ],
       "flags": {},
-      "order": 15,
+      "order": 17,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1610,190 +1831,53 @@
         "Node name for S&R": "CR Text"
       },
       "widgets_values": [
-        "<lora:pony/lol/Spirit_blossom_Kindred-000006.safetensors:1.0>,\n"
+        "<lora:pony/styles/modern_anime_screencap_v1_0.safetensors:1.0>,anime screencap,\n,<lora:pony/lol/defaultsona-pdxl-nvwls-v1.safetensors:0.7>,"
       ]
     },
     {
-      "id": 129,
-      "type": "Note",
+      "id": 84,
+      "type": "CR Text",
       "pos": [
-        -30,
-        2080
+        -640,
+        2440
       ],
       "size": [
         400,
-        380
+        200
       ],
       "flags": {},
-      "order": 16,
+      "order": 18,
       "mode": 0,
       "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "CAREFULL\n<lora:pony/lol/ZoeLoLXLbyKillerUwU13 AI.safetensors:1.0>\nISN'T THE SAME TO \n<lora:pony/lol/ZoeLoLXLbyKillerUwU13_AI.safetensors:1.0>\n\nTHE LORA TAG LOADER BRAKES WHEN IT FINDS THAT UNDERSCORE. AUTOCOMPLETE WILL REPLACE THE SPACE FOR A _\n\naparently sometimes capital letters matter?\n\nfor realism\n<lora:pony/styles/zy_Realism_Enhancer_v1.safetensors:0.3>\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 130,
-      "type": "Reroute",
-      "pos": [
-        1200,
-        1580
-      ],
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
+      "outputs": [
         {
-          "name": "",
+          "name": "text",
           "type": "*",
-          "link": 284,
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "",
-          "type": "STRING",
           "links": [
-            281
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": false,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 98,
-      "type": "Logic Boolean",
-      "pos": [
-        -920,
-        1410
-      ],
-      "size": [
-        315,
-        118
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [],
-          "slot_index": 0
-        },
-        {
-          "name": "NUMBER",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [],
-          "slot_index": 1
-        },
-        {
-          "name": "INT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [],
-          "slot_index": 2
-        },
-        {
-          "name": "FLOAT",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": null,
-          "slot_index": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Logic Boolean"
-      },
-      "widgets_values": [
-        1
-      ]
-    },
-    {
-      "id": 152,
-      "type": "StringFromList",
-      "pos": [
-        70,
-        1540
-      ],
-      "size": [
-        315,
-        122
-      ],
-      "flags": {},
-      "order": 27,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "list_input",
-          "type": "STRING",
-          "link": 278,
-          "widget": {
-            "name": "list_input"
-          }
-        },
-        {
-          "name": "index",
-          "type": "INT",
-          "link": 271,
-          "widget": {
-            "name": "index"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "list item",
-          "type": "STRING",
-          "links": [
-            272,
-            284
+            87
           ],
           "slot_index": 0,
-          "shape": 6
+          "shape": 3
         },
         {
-          "name": "size",
-          "type": "FLOAT,INT,NUMBER,STRING",
-          "links": [],
-          "slot_index": 1
-        },
-        {
-          "name": "wraps",
-          "type": "FLOAT,INT,NUMBER,STRING",
+          "name": "show_help",
+          "type": "STRING",
           "links": null,
-          "shape": 6
+          "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "StringFromList"
+        "Node name for S&R": "CR Text"
       },
       "widgets_values": [
-        "",
-        0
+        "dfSna, cyan hair, gradient hair, twintails, very long hair, blue eyes, big breast,"
       ]
     },
     {
       "id": 141,
       "type": "Number Counter",
       "pos": [
-        -390,
+        -340,
         1240
       ],
       "size": [
@@ -1801,7 +1885,7 @@
         194
       ],
       "flags": {},
-      "order": 19,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -1852,6 +1936,47 @@
         0,
         1
       ]
+    },
+    {
+      "id": 114,
+      "type": "CR Text",
+      "pos": [
+        500,
+        1270
+      ],
+      "size": [
+        460,
+        150
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            166
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -1958,14 +2083,6 @@
       66,
       4,
       "INT"
-    ],
-    [
-      108,
-      73,
-      0,
-      93,
-      0,
-      "IMAGE"
     ],
     [
       109,
@@ -2176,14 +2293,6 @@
       "*"
     ],
     [
-      276,
-      133,
-      0,
-      154,
-      0,
-      "STRING"
-    ],
-    [
       277,
       82,
       0,
@@ -2200,20 +2309,60 @@
       "STRING"
     ],
     [
-      281,
-      130,
-      0,
-      92,
-      0,
-      "*"
-    ],
-    [
       284,
       152,
       0,
       130,
       0,
       "*"
+    ],
+    [
+      291,
+      98,
+      1,
+      158,
+      0,
+      "*"
+    ],
+    [
+      297,
+      159,
+      0,
+      92,
+      0,
+      "*"
+    ],
+    [
+      300,
+      130,
+      0,
+      159,
+      0,
+      "*"
+    ],
+    [
+      301,
+      131,
+      0,
+      159,
+      1,
+      "*"
+    ],
+    [
+      331,
+      73,
+      0,
+      93,
+      0,
+      "IMAGE"
+    ],
+    [
+      386,
+      133,
+      0,
+      154,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2231,19 +2380,6 @@
       "flags": {}
     },
     {
-      "id": 2,
-      "title": "image saver",
-      "bounding": [
-        1780,
-        2260,
-        1060,
-        920
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "flags": {}
-    },
-    {
       "id": 3,
       "title": "THE AUTOMATIC GROUP?",
       "bounding": [
@@ -2255,24 +2391,38 @@
       "color": "#3f789e",
       "font_size": 24,
       "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "image saver",
+      "bounding": [
+        1920,
+        2420,
+        1060,
+        920
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
     }
   ],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.9408947333053267,
+      "scale": 1.3513057093104122,
       "offset": [
-        664.045180664573,
-        -512.5802249961392
+        902.889083607612,
+        -2426.849157028932
       ]
     },
     "node_versions": {
-      "comfy-core": "0.3.14",
       "ComfyUI-Custom-Scripts": "a53ef9b617ed1331640d7a2cd97644995908dc00",
       "ComfyUI_Comfyroll_CustomNodes": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+      "comfy-core": "0.3.14",
+      "ComfyUI-SelectStringFromListWithIndex": "989cc8e93a9f5f97f7163de56d962383aeecc10b",
+      "was-node-suite-comfyui": "393aecf91fe193f292f02421ac8262cc88ed2875",
       "comfyui_lora_tag_loader": "c1e1a061d42384e06ff6c547c4a00aef7cc96e59",
       "ComfyUI-Image-Saver": "f8520bcfe5339ba7b4bb64ba96f6ed03da87fb89",
-      "was-node-suite-comfyui": "393aecf91fe193f292f02421ac8262cc88ed2875",
       "comfyui-crystools": "1.22.0"
     },
     "VHS_latentpreview": false,
