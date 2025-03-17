@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lewd-poses-for-Stable-Diffusion
 
 Please, if you find any issues, open an issue, and I'll try to help as much as I can.  
