@@ -362,7 +362,7 @@
       },
       "widgets_values": [
         "",
-        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, "
+        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,petplay, one leg up, put both hands on ground,:0.8>,,exhibitionism, leash, piss, pee, peeing"
       ]
     },
     {
@@ -1104,7 +1104,12 @@
       "outputs": [],
       "properties": {
         "Node name for S&R": "Show any [Crystools]"
-      }
+      },
+      "widgets_values": [
+        false,
+        true,
+        ""
+      ]
     },
     {
       "id": 88,
@@ -1598,45 +1603,7 @@
       },
       "widgets_values": [
         "",
-        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, "
-      ]
-    },
-    {
-      "id": 199,
-      "type": "Load Text File",
-      "pos": [
-        -2140,
-        1420
-      ],
-      "size": [
-        770,
-        120
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            420
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "DICT",
-          "type": "DICT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Load Text File"
-      },
-      "widgets_values": [
-        "ComfyUI/input/2/Optional/tail.txt",
-        "[filename]"
+        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,petplay, one leg up, put both hands on ground,:0.8>,,exhibitionism, leash, piss, pee, peeing"
       ]
     },
     {
@@ -1749,7 +1716,7 @@
         140
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -1772,7 +1739,7 @@
         146
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1959,6 +1926,47 @@
       ]
     },
     {
+      "id": 202,
+      "type": "CR Text",
+      "pos": [
+        -1760,
+        1180
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            419
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "Padding\n"
+      ]
+    },
+    {
       "id": 197,
       "type": "Load Text File",
       "pos": [
@@ -1992,49 +2000,46 @@
         "Node name for S&R": "Load Text File"
       },
       "widgets_values": [
-        "ComfyUI/input/2/Illoustroust.txt",
+        "ComfyUI/input/Lewd-poses-for-Stable-Diffusion/Illoustroust.txt",
         "[filename]"
       ]
     },
     {
-      "id": 202,
-      "type": "CR Text",
+      "id": 199,
+      "type": "Load Text File",
       "pos": [
-        -1760,
-        1180
+        -2140,
+        1420
       ],
       "size": [
-        400,
-        200
+        770,
+        120
       ],
-      "flags": {
-        "collapsed": false
-      },
+      "flags": {},
       "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "text",
-          "type": "*",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            419
+            420
           ],
-          "slot_index": 0,
-          "shape": 3
+          "slot_index": 0
         },
         {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
+          "name": "DICT",
+          "type": "DICT",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "CR Text"
+        "Node name for S&R": "Load Text File"
       },
       "widgets_values": [
-        "Padding\n"
+        "ComfyUI/input/Lewd-poses-for-Stable-Diffusion/Optional/tail.txt",
+        "[filename]"
       ]
     }
   ],
@@ -2500,10 +2505,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5209868481924552,
+      "scale": 1.1167815779425165,
       "offset": [
-        2475.2155397686715,
-        -1452.1196313171167
+        2048.172562717928,
+        -1334.893791461135
       ]
     },
     "node_versions": {
