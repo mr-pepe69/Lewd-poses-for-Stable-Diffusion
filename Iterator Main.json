@@ -1,0 +1,2525 @@
+{
+  "last_node_id": 203,
+  "last_link_id": 425,
+  "nodes": [
+    {
+      "id": 104,
+      "type": "Reroute",
+      "pos": [
+        2180,
+        1390
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 130
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "MODEL",
+          "links": [
+            133
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 116,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1380,
+        1050
+      ],
+      "size": [
+        480,
+        240
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 146,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,,,tail penetrate, spread legs, inserting her own tail in her juiciy pussy, belly expansion, ,"
+      ]
+    },
+    {
+      "id": 115,
+      "type": "CR Combine Prompt",
+      "pos": [
+        1100,
+        1070
+      ],
+      "size": [
+        210,
+        150
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "part1",
+          "type": "STRING",
+          "link": 143,
+          "widget": {
+            "name": "part1"
+          }
+        },
+        {
+          "name": "part3",
+          "type": "STRING",
+          "link": 166,
+          "widget": {
+            "name": "part3"
+          }
+        },
+        {
+          "name": "part4",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "part4"
+          }
+        },
+        {
+          "name": "part2",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "part2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            146,
+            174
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Combine Prompt"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        ","
+      ]
+    },
+    {
+      "id": 118,
+      "type": "CLIPSetLastLayer",
+      "pos": [
+        1850,
+        2090
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 147
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            167
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPSetLastLayer"
+      },
+      "widgets_values": [
+        -2
+      ]
+    },
+    {
+      "id": 92,
+      "type": "Reroute",
+      "pos": [
+        1500,
+        1600
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 297,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": [
+            112,
+            124
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 98,
+      "type": "Logic Boolean",
+      "pos": [
+        -1000,
+        1310
+      ],
+      "size": [
+        315,
+        118
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "NUMBER",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            291
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 2
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Logic Boolean"
+      },
+      "widgets_values": [
+        1
+      ]
+    },
+    {
+      "id": 131,
+      "type": "Reroute",
+      "pos": [
+        1050,
+        1480
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 174
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            301
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 132,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2730,
+        1560
+      ],
+      "size": [
+        480,
+        240
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 179,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, "
+      ]
+    },
+    {
+      "id": 68,
+      "type": "LoraTagLoader",
+      "pos": [
+        1900,
+        1430
+      ],
+      "size": [
+        210,
+        86
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 168
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 167
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 124,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            130
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            60,
+            70
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            71,
+            179
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraTagLoader"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 76,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2130,
+        1440
+      ],
+      "size": [
+        210,
+        54
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 70
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 71,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            72
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 71,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2130,
+        1530
+      ],
+      "size": [
+        210,
+        54
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 60
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 59,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            61
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 130,
+      "type": "Reroute",
+      "pos": [
+        1050,
+        1440
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 284
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            300
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 93,
+      "type": "Image Saver",
+      "pos": [
+        2560,
+        2500
+      ],
+      "size": [
+        400,
+        742
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 331
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 109,
+          "widget": {
+            "name": "steps"
+          },
+          "shape": 7
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 110,
+          "widget": {
+            "name": "cfg"
+          },
+          "shape": 7
+        },
+        {
+          "name": "modelname",
+          "type": "STRING",
+          "link": 111,
+          "widget": {
+            "name": "modelname"
+          },
+          "shape": 7
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 112,
+          "widget": {
+            "name": "positive"
+          },
+          "shape": 7
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 113,
+          "widget": {
+            "name": "negative"
+          },
+          "shape": 7
+        },
+        {
+          "name": "seed_value",
+          "type": "INT",
+          "link": 114,
+          "widget": {
+            "name": "seed_value"
+          },
+          "shape": 7
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 115,
+          "widget": {
+            "name": "width"
+          },
+          "shape": 7
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 116,
+          "widget": {
+            "name": "height"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Image Saver"
+      },
+      "widgets_values": [
+        "%time_%basemodelname_%seed",
+        "",
+        "png",
+        20,
+        7,
+        "",
+        "",
+        "normal",
+        "unknown",
+        "unknown",
+        0,
+        512,
+        512,
+        true,
+        100,
+        false,
+        0,
+        1,
+        0,
+        "%Y-%m-%d-%H%M%S",
+        false,
+        true
+      ]
+    },
+    {
+      "id": 66,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        2360,
+        1420
+      ],
+      "size": [
+        315,
+        334
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 133
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 72
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 61
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 68
+        },
+        {
+          "name": "noise_seed",
+          "type": "INT",
+          "link": 107,
+          "widget": {
+            "name": "noise_seed"
+          }
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 150,
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 151,
+          "widget": {
+            "name": "steps"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            65
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        1043313014016054,
+        "randomize",
+        20,
+        8,
+        "euler_ancestral",
+        "karras",
+        0,
+        10000,
+        "enable"
+      ]
+    },
+    {
+      "id": 73,
+      "type": "VAEDecode",
+      "pos": [
+        2270,
+        1810
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 65
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 66
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            331
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 154,
+      "type": "CR Prompt List",
+      "pos": [
+        -570,
+        1440
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "multiline_text",
+          "type": "STRING",
+          "link": 386,
+          "widget": {
+            "name": "multiline_text"
+          }
+        },
+        {
+          "name": "prepend_text",
+          "type": "STRING",
+          "link": 277,
+          "widget": {
+            "name": "prepend_text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            278
+          ],
+          "slot_index": 0,
+          "shape": 6
+        },
+        {
+          "name": "body_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Prompt List"
+      },
+      "widgets_values": [
+        "",
+        "body_text",
+        "",
+        0,
+        1000
+      ]
+    },
+    {
+      "id": 86,
+      "type": "Cfg Literal (Image Saver)",
+      "pos": [
+        2170,
+        2810
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            110,
+            150
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Cfg Literal (Image Saver)"
+      },
+      "widgets_values": [
+        7
+      ]
+    },
+    {
+      "id": 75,
+      "type": "CR SDXL Aspect Ratio",
+      "pos": [
+        2210,
+        1910
+      ],
+      "size": [
+        315,
+        278
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            115
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            116
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "batch_size",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": [
+            68
+          ],
+          "slot_index": 4
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 5
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR SDXL Aspect Ratio"
+      },
+      "widgets_values": [
+        832,
+        1216,
+        "1:1 square 1024x1024",
+        "Off",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 87,
+      "type": "Int Literal (Image Saver)",
+      "pos": [
+        2220,
+        2690
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            109,
+            151
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int Literal (Image Saver)"
+      },
+      "widgets_values": [
+        30
+      ]
+    },
+    {
+      "id": 72,
+      "type": "Checkpoint Loader with Name (Image Saver)",
+      "pos": [
+        1830,
+        1900
+      ],
+      "size": [
+        344.3999938964844,
+        120
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            168
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            147
+          ],
+          "slot_index": 1,
+          "shape": 3
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            66
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "model_name",
+          "type": "STRING",
+          "links": [
+            111
+          ],
+          "slot_index": 3,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Checkpoint Loader with Name (Image Saver)"
+      },
+      "widgets_values": [
+        "Illoustrous/waiNSFWIllustrious_v120.safetensors"
+      ]
+    },
+    {
+      "id": 153,
+      "type": "Show any [Crystools]",
+      "pos": [
+        -30,
+        1200
+      ],
+      "size": [
+        500,
+        148
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_value",
+          "type": "*",
+          "link": 274,
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Show any [Crystools]"
+      }
+    },
+    {
+      "id": 88,
+      "type": "Seed Generator (Image Saver)",
+      "pos": [
+        2160,
+        2940
+      ],
+      "size": [
+        352.79998779296875,
+        82
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            107,
+            114
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed Generator (Image Saver)"
+      },
+      "widgets_values": [
+        1116216938998915,
+        "increment"
+      ]
+    },
+    {
+      "id": 70,
+      "type": "CR Text",
+      "pos": [
+        1810,
+        1600
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            59,
+            113
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "bad quality,worst quality,worst detail,sketch,censor,watermark, multiple scenes,\n"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 152,
+      "type": "StringFromList",
+      "pos": [
+        0,
+        1470
+      ],
+      "size": [
+        315,
+        122
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "list_input",
+          "type": "STRING",
+          "link": 278,
+          "widget": {
+            "name": "list_input"
+          }
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 271,
+          "widget": {
+            "name": "index"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "list item",
+          "type": "STRING",
+          "links": [
+            272,
+            284
+          ],
+          "slot_index": 0,
+          "shape": 6
+        },
+        {
+          "name": "size",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "wraps",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringFromList"
+      },
+      "widgets_values": [
+        "",
+        0
+      ]
+    },
+    {
+      "id": 83,
+      "type": "CR Text",
+      "pos": [
+        -730,
+        2000
+      ],
+      "size": [
+        550,
+        300
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            88
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 84,
+      "type": "CR Text",
+      "pos": [
+        -720,
+        2340
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            87
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, "
+      ]
+    },
+    {
+      "id": 114,
+      "type": "CR Text",
+      "pos": [
+        570,
+        1020
+      ],
+      "size": [
+        460,
+        150
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            166
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "tail penetrate, spread legs, inserting her own tail in her juiciy pussy, belly expansion, "
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 159,
+      "type": "Switch any [Crystools]",
+      "pos": [
+        1180,
+        1460
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "on_true",
+          "type": "*",
+          "link": 300
+        },
+        {
+          "name": "on_false",
+          "type": "*",
+          "link": 301
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": [
+            297
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Switch any [Crystools]"
+      },
+      "widgets_values": [
+        true
+      ]
+    },
+    {
+      "id": 82,
+      "type": "CR Combine Prompt",
+      "pos": [
+        40,
+        1760
+      ],
+      "size": [
+        210,
+        150
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "part1",
+          "type": "STRING",
+          "link": 86,
+          "widget": {
+            "name": "part1"
+          }
+        },
+        {
+          "name": "part3",
+          "type": "STRING",
+          "link": 87,
+          "widget": {
+            "name": "part3"
+          }
+        },
+        {
+          "name": "part4",
+          "type": "STRING",
+          "link": 88,
+          "widget": {
+            "name": "part4"
+          }
+        },
+        {
+          "name": "part2",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "part2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            143,
+            277
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Combine Prompt"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        ","
+      ]
+    },
+    {
+      "id": 85,
+      "type": "CR Text",
+      "pos": [
+        -570,
+        1710
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            86
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "explicit,masterpiece,best quality,amazing quality,"
+      ]
+    },
+    {
+      "id": 158,
+      "type": "Reroute",
+      "pos": [
+        -590,
+        1220
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 291
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 151,
+      "type": "ShowText|pysssss",
+      "pos": [
+        630,
+        2130
+      ],
+      "size": [
+        490,
+        210
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 272,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "explicit,masterpiece,best quality,amazing quality,,,neeko,blue hair, purple hairtips,purple hair tips, big tail,medium breast, ,white sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, "
+      ]
+    },
+    {
+      "id": 199,
+      "type": "Load Text File",
+      "pos": [
+        -2140,
+        1420
+      ],
+      "size": [
+        770,
+        120
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            420
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "DICT",
+          "type": "DICT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Text File"
+      },
+      "widgets_values": [
+        "ComfyUI/input/2/Optional/tail.txt",
+        "[filename]"
+      ]
+    },
+    {
+      "id": 203,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1860,
+        1750
+      ],
+      "size": [
+        490,
+        210
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 424,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "Padding\ntail penetrate, spread legs, inserting her own tail in her juiciy pussy, belly expansion,torn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, scared expression, tears, criying, pitch black background,full body,spread legs,terrified, peeing, exposed pussy, pis,\ntorn clothing, one-piece rags, two-piece rags,scared, dirty, sideboob, criying, chained to a wall,spread arms, dark enviroment, scared expression, tears, criying, pitch black background,full body,spread legs,\nJed-bny, Black Bodysuit, Bunny Ears Headband, White Collar, Black Bow Tie, Fishnet Stockings, Black Heels, White Bunny Tail ,White Gloves\njyojifuku, china dress, skirt\nsexy lingerie, underwear, see-through\nsee-through dress,nipples,pelvic curtain,side slit,bottomless,short sleeves,china dress,star print,\nmaid apron, maid, maid headdress, thighhighs, wrist cuffs, 1girl, high heels, kneeling, side view, exposed breast,maid\nwhite sweater ,virgin destroyer sweater,white panties,aran sweater, folded double v, spread legs, legs up, double v\nwhite sweater ,virgin destroyer sweater,white panties,aran sweater,best_legs_up\nwhite sweater ,virgin destroyer sweater,white panties,aran sweater, kneeling, smiling, looking up, looking at viewer, from above,drooling\nwhite sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, exhausted, pleasure, embarrassed, open mouth, tongue out, blush, sweat, saliva, fucked silly,ahegao, full body, spread legs,\nwhite sweater ,virgin destroyer sweater,white panties, virgin destroyer sweater, \na young girl with long hair and green eyes. She is wearing a red bikini and is sitting on the floor with her legs spread apart. The girl is holding a red heart-shaped balloon with the words \"Will you be my Valentine?\" written on it. The background is a light pink color.\nmating press,matingpress, mating_press,testicles,from behind, looking at viewer, uncensored, pussy,penis, man on top\nmating press,matingpress,on back, testicles,from behind, looking at viewer, uncensored, pussy,penis,\nmating press, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours, lilandavastyle,  imminent sex, mating press, from below, Expressive, detailed background, night, inside, apartment, volumetric lighting, vivid colours,  imminent sex, mating press, from below,\nbound,bdsm,bondage,gag,gagged,bound wrists,improvised gag,bound legs,underwear,rope,bound ankles,bound arms,restrained,shibari,cuffs,spread legs,\npetplay, one leg up, put both hands on ground,:1.0>,,exhibitionism, leash, piss, pee, peeing\nDoggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes,  criying, face smeared with blood, beaten, scratches, bruised,bleeding, deep cuts,\nDoggystyle Pov Anal,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov,vaginal penetration,looking back,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov Anal,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov Anal,,Doggystyle Pov Anal,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov,vaginal penetration,reaching for viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov,vaginal penetration,facing viewer,butt raised,deeper,Torso grab:1.3, sweaty, gentle, trembling, library, sexual act, sex, perfect eyes, beautiful eyes, wide innocent eyes,\nDoggystyle Pov,Doggystyle Pov Anal,facing away,butt raised,deeper,Torso grab:1.3\npalidoggy,(frontal, from the front)\npalidoggy,sideview\nspread legs, panty, gasping for hair, on bed, sexy, detailed clothing,\npenis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\nnipples and pussy visible, detailed pussy, perfect pussy, ahegao, rolling eyes, extremely stretched pussy, big stomach bulge, balls deep, extremely detailed stomach bulge, penis outline stomach bulge, cum pool, excessice cum, massive creampie, size difference, impossible fit, (white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus,  micro skirt, skirt\n(white background), 1girl, cowboy shot, multiple view, skirtlift, both hands on ass, pussy, anus\ndildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, excessive cum, cumflation, ahegao,  cum inflation, inflation, big belly, excessive cum, cum overflow, cum, rolling eyes,ahegao, cum in nose, ejaculation, cum in mouth, cervical penetration, sex, \ndildo riding, dildo, spread legs, squatting, pussy juice,cum drip, drip, cum, bukake, excessive cum, cumflation, ahegao, \ndildo riding, dildo, spread legs, squatting, pussy juice,pregnant\nsex_machine,,sex machine, restrained, bound, bdsm, stationary restraints, milking machinetube,cable,blindfold,object insertion, sex toy,  mind control, corruption,gagged,machine,forced orgasm\ndildo riding, dildo, spread legs, squatting, anal juice, anal, (anal dildo riding), (stomach bulge)\ndildo riding, dildo, spread legs, squatting, pussy juice\nDildo_RIDING, dildo_riding,dildo,huge_dildo,belly_buldge,dildo riding, dildo, spread legs, squatting, pussy juice\nextreme_insertion,dildo_riding,dildo,huge_dildo\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, x-ray\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,extreme_insertion,dildo_riding,dildo,huge_dildo, stomach bulge, extreme insertion, large insertion, (sideways:2)\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,extreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, facing_away, anal, anal_expansion,squatting on a dildo in the floor\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,extreme_insertion,dildo_riding,dildo,huge_dildo, extreme insertion, large insertion, (anal:1.2), anal_expansion,squatting on a dildo in the floor, (frontview:1.2)\nnaked, spread_legs, vagina_visible, facing_viewer, explicit, solo, ((spreading_own_pussy))\npeeing, ahegao, broken expression, ((after_rape)),((1girl)),((solo)), after_sex, bed, spread_legs, spread_arms\nlooking back, closeup, from below, low angle, spread ass, naughty_face, blush, parted lips, half-closed_eyes\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,missionary, vaginal penetration, 1boy, chocking, ahegao, panty to the side, sideview, belly buldge, deep penetration, extreme insertion, xray, reversed cowgirl, cowgirl, woman facing away from viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, big ass, exposed anus\ncowgirl, cowgirl, woman facing viewer, pov, small ass\nreversed cowgirl, cowgirl, woman facing away from viewer, pov, small ass\nbending over, legs apart, straight legs, view from behind, ass focus, outdoors, beautiful, source_anime, doing the splits, exposed vagina, exposed breasts, small tight ass, teardrop breasts,face down ass up\nvagina focus, naked, happy, eager, ass raised, head on ground, elbows on ground, legs bent:3, visible feet, visible ankles, bare feet, bent forward, torso upside down, presenting ass, anus, vagina upside down\npeeing, one leg up, wet, condom on thigs, ring of condoms,blushed, criying, thight pussy, multiple condoms,used condom,condom belt,condom\n(lowering pants), pulling down pants, hands on pants, naked breasts, perky breasts, sexy expression\nblushing, head down eyes up, (embarrassed:0.4), (worried:0.4), nose blush, lying on side, concentrating, in bedroom, stacks of textbooks, looking down, from front, front view, ass crack, anus, pussy slightly visible, pussy partially visible\nfrom below, povsit, spread legs, blue eyes, close-up, slingshot swimsuit, half-closed eyes, wet, dripping, sweaty,  looking at viewer, (blue sky background)\nround breasts, small breasts, breasts apart,legs behind head, legs up, chained to a column by the feet, slim, excessive Pussy juice drips into bucket, bucket under girl, fantasy, from_below,looking down at pussy, young\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom\nrear view, ass focus, beautiful pussy (creampie) cumdrip from pussy, anus, pajamas, panties pull, girl sleeping lying on her side,1girl\npussy,masturbate,from below,(pussy focus:1.1),nude,spread legs,between_legs,blush\nman hands pressing boobs, male pov, boobjob\nno panties, naked pussy, knees together, feet apart, looking in the window slight blush, ((butt plug visible))\nsexy, charming, alluring, seductive, erotic, enchanting, (rope, shibari, lactation, milking machine:1.2),breasts out, arms up, sweat, pussy,perfect female body, lora:\ntopless, looking at viewer, standing, leaning forward, v, sticking tongue out, warm smile, beautiful, natural, cute, ponytail, light-brown hair, (blue and white striped cotton panties:1.2), (stripes pattern:1.4)\npublic indecency,bondage,completely nude,heart tattoo,cum on body,cum on breasts,multiple condoms,used condom,condom belt,condom,legs up,spread legs,big witch hat, ashamed, covering her eyes with the hat, blushed, blush, naked, small smile, covered eyes, hiden eyes, covering privates with hand, grabing hat with one hand\n(solo focus:1.5), (sex looking at viewer, heart-shaped pupils:1.5), (floating hearts,:1.5), (licking lips, closed mouth tongue out:1.3), (sex looking at viewer, holding legs, legs up:1.5), pussy, perfect pussy, realistic pussy, clitoris, nipples, perfect nipples, spread legs, ecstasy((Orgasm, gaspingm)), vocal, (moaning, screaming:1.1), seductive smile, smile, Sensual face, motion blur, embarrassed, blush, (anal sex, anal penetration:1.2), (missionary sex, lying, from above:1.2), show pussy, (cum in pussy, cum in anus, excessive cum:1.3), pov, (ass, anus:1.3), 1man, 1girl\n<lora:Illoustroious/extreme_insertion_illustriousXL_v1.1-000007.safetensors:1.0>,2girl, seraphine having sex with her twin with her massive futanari horse cock, front view,futa, futanari, deep penetration, standing up, arms grab, multiple penises, anal sex, from behind, arm grab, deep insertion, deep penetration, belly buldge, extreme insertion, criying, dripping cum from pussy, dripping cum from dick,(shiny skin), hanging breasts,long hair,huge breasts, (medieval city background), medieval marketplace,(pillorypose), pillory, standing, fellatio, deepthroat, head grab, looking up, expressionless\n1futa, small detailed cock, 20 year old, 1male out of frame, looking up lustfully, blush on nose, smug, luxurious pool, poolside, squatting on the floor against wall, masturbating cock, cumming from masturbating, riding anal glass dildo, deepthroat, headpush, rough , saliva dripping from mouth, volumetric lighting, vibrant colors, full body shot, lilandavastyle, OverallDetail,  depth of field,g0thicPXL, glowing, neon\npulling top off dress down to reveal breasts, bra untied, cupping breasts with hands, nipple slip, off shoulder, pulling skirt up, show panties,, midriff, narrow hips,((exposed pussy)) smiling, blush, looking at viewer, \nonsen, steam, partially submerged, looking up, light smile, spread arms, short blonde hair, gr33n, plant, flower, relaxed, eyes closed, foliage, mountain in distance, head back\nnaughty face,  ((((vaginal sex, cum inside pussy, cumming, big natural boobs)))),drooling, tongue out, looking up, wodeipoi, HolliW\nmassive futanari cock, massive cock, massive hors dick, huge cock, huge dick, naked, stroking dick with both hand, semen, covered in semen, rolled up eyes, massive testicles, massive balls, stroking\nrape, criying, suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, \nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), looking back\nrape, (criying), suffering, tied up, bondage, BDSM, deep penetration, pregnant, violation, sex, hands behind back, fucked from behind, raped, criying, forced sex, (pov), male fucking woman while choking her\nexcessive cum, looking back, kneeling, facial, cum on hair, cum in mouth, cum on body, bukkake, cum string,\ngrindsex, cowgirl position, penis, pussy, kneeling\ngrindsex, cowgirl position, penis, pussy, squatting\nthighsex, girl on top, legs together, pov, cum on thighs, ejaculation, erection, thigh focus, penis between thighs\nhuman onahole,torso grab, rough sex, stomach bulge\nlapfingering, sitting on lap,(faceless male), steam, (fully nude), (aroused), moaning, ahegao\npenis, 1girl, futanari, testicles, erection, huge penis, uncensored, condom, large penis, condom on penis, thighhighs, huge breasts, condom, used condom, (condom on penis:1.2),hyper_coneja\ncheek bulge, fellatio, 1girl, pov, penis\nssiveh,1girl, 2boys, 2penises, double penetration, anal, vaginal, mmf threesome, group sex\ntentaclepitlora,tentacles,tentaclepitlora,pregnant,lactation,slime,sucction cups,tentacle pit\ntentaclepitlora\nmasturbating, (arroused), taking a bath, bathub, a woman masturbating in a bathtub,  , liying on bathtub, spread legs, dildo insertion,bathroom, bathtub, partially submerged, ambient lighting, A woman with long, soapy water, Her arms rest gently on the sides of the tub. The bathroom is adorned with candles,  and a large window that lets in natural light. The tiles are a soft, pastel color, and a few flower petals float on the water surface,\nDoggy style, male standing firmly behind female, female on all fours, back deeply arched, male's hands gripping her hips tightly, intense intimate connection, soft moaning\nMissionary position, male towering over female, female laying gracefully on her back, legs spread wide, male firmly holding one leg, their eyes locked in a deep, passionate gaze, close intimate contact\nCowgirl, female straddling confidently on top, male laying back with a calm expression, female's hands resting gently on his chest, she looks down with a soft smile, close intimate interaction, sensual movement\nReverse cowgirl, female facing away as she rides on top, male laying down relaxed, female leans back slightly, her hands placed on his thighs, intimate tension between them, subtle movement\nStanding doggy style, male standing behind with strong posture, female bent forward against a cold wall, her arms pressing against the surface, male's grip tight on her waist, passionate close contact, hot breath on neck\nSpooning, male's body curved behind female, both laying on their side in perfect harmony, male's hand gently placed on her hip, their bodies entwined in intimate warmth, soft whispers exchanged\nLegs over shoulders, male hovering over female with dominance, female laying back submissively, legs lifted over his strong shoulders, their connection deep and intense, fiery eye contact and intimate passion\nProne bone, female flat on her stomach, legs close together, male hovering on top, his grip firm on her shoulders, bodies pressed together in deep, rhythmic movement, intense connection\nAgainst the wall, male standing strong, female's body pressed tightly against the cold surface, legs wrapped around his waist, male supporting her hips, their faces close in an intimate embrace, deep connection\nSideways, both laying on their sides, male behind female, one of her legs raised gently, his hands caressing her hips, their bodies close and intimate, slow sensual connection\nBent over table, male standing with authority, female bent over a sturdy table, hands gripping the edge tightly, male's firm grip on her hips, intimate and deep connection, powerful dynamic\nKneeling, male kneeling behind female, his strong hands resting on her back, female on all fours, their bodies intimately close, quiet whispers of passion, rhythmic movement\nFace sitting, female confidently on top, straddling male's face, her hands resting softly on his chest, intimate and playful interaction, her quiet moans echoing\nLotus position, both seated, legs intertwined deeply, faces inches apart, male's arms wrapped around female, they hold each other close in an intimate embrace, eyes locked, shared breath\nFemale sitting on bed, legs spread confidently, one hand teasing between her legs, the other resting casually on her thigh, back slightly arched, soft moans escaping her lips, eyes closed in deep pleasure\nFemale kneeling with legs apart, one hand exploring between her legs, the other gripping her breast tightly, her head tilted back in an expression of pure ecstasy, intimate and intense\nFemale laying on her back, legs spread wide, one hand caressing herself, the other gripping the bed sheets firmly, her teeth gently biting her lower lip, soft moans in the air\nFemale standing against a cold wall, one leg raised, hand between her legs exploring with desire, eyes closed, leaning back against the surface, mouth open slightly in pleasure\nFemale on all fours, one hand teasing between her legs, back deeply arched, head turned to the side, eyes closed in intense pleasure, hips lifted high, seductive moans\nFemale sitting on the edge of a chair, legs spread wide, both hands exploring herself with confidence, head thrown back, her hair cascading down behind her, quiet moans filling the air\nFemale on her knees, one hand between her legs teasingly, the other gripping her breast firmly, her intense gaze locked on the viewer, a seductive smile on her lips\nFemale laying on her side, one leg lifted, hand teasing between her legs, the other resting gently on her breast, eyes closed, a soft moan escaping her lips, intimate atmosphere\nFemale bent over, legs spread confidently, one hand teasing between her legs, back arched, her hair cascading like silk, her expression seductively inviting\nFemale standing confidently, legs slightly apart, one hand between her legs, the other on her breast, biting her lip sensually, eyes locking in a seductive stare\nFemale sitting cross-legged, one hand teasing herself intimately, the other softly resting on her chest, eyes half-closed, lips parted, her intimate pleasure expressed subtly\nFemale on all fours, back arched deeply, using a toy with confidence, hips raised high, one hand holding the toy, the other supporting her body, eyes closed in intense pleasure\nFemale laying on her back, legs bent at the knees, both hands teasing between her legs, soft moans filling the air, eyes closed in an expression of ecstasy\nFemale squatting low, legs spread wide, one hand guiding a toy between her legs, seductive gaze, back arched, her hair falling around her shoulders, a soft moan escapes her lips\nFemale laying back, legs spread wide, using a vibrator, one hand holding it in place, the other gripping the sheets tightly, head tilted back in pure pleasure\nFemale sitting on her knees, holding a dildo with both hands, sliding it between her legs slowly, her eyes closed, mouth slightly open in a soft moan of pleasure\nFemale laying on her side, one leg raised, using a toy between her legs, the other hand resting softly on her breast, intense look of satisfaction on her face\nFemale sitting on a chair, legs spread wide confidently, using a vibrator teasingly, one hand guiding it between her legs, the other gripping the armrest, her back arched\nFemale standing with one leg propped on a chair, using a toy with precision, hand between her legs, other hand gripping her breast, her expression seductive and intense\nFemale on all fours, hips raised high, using a vibrating toy with confidence, one hand holding it in place, the other supporting her, eyes closed, her body rocking rhythmically\nFemale laying flat on her stomach, legs spread, using a toy teasingly behind her, one hand gripping it, her head resting on her arms, soft moans escaping\nFemale squatting low, using a dildo with a teasing smile, one hand guiding it between her legs, back arched, her hair framing her face seductively\nFemale sitting cross-legged, using a small vibrator between her legs confidently, one hand holding the toy, the other resting on her breast, her expression intense\nFemale kneeling, back arched deeply, using a toy between her legs, one hand holding it in place, the other teasing her breast, her head thrown back in pleasure\nFemale sitting on the edge of a bed, legs spread wide, using a vibrator with intense focus, one hand holding the toy in place, the other gripping her thigh\nFemale laying on her back, legs raised and spread wide, using a toy on herself with both hands gripping it firmly, head tilted back, her face expressing pure ecstasy\nFemale standing, leaning confidently against a wall, using a toy between her legs, one hand on the toy, the other gripping her breast, biting her lip seductively\nFemale sitting on her knees, using a toy behind her confidently, one hand gripping it, back arched, soft moans escaping her lips in rhythmic pleasure\nsexy girl, petite body, naked, face smeared with blood, beaten, scratches, bruised, small tight butt, pleasured look, sex, human penis, floating, human penis, big buff knights, hot knights, size difference, spitroast, deepthroat, double penetration, shiny skin, consensual, sex, rough sex, group sex, epic sex, tears, eyes looking up, head grab, cum on face, cum on breasts, cumming, arms tied behind back, background location, in knight camp, knights lair, wide shot dark cinematography, scary lighting, silhouette, dark and scary, volumetric lighting, shadows, source lights, speed lines, ((too crying girl, cry girl, crying girl)), deep sex, slave, collar\npaddingline"
+      ]
+    },
+    {
+      "id": 133,
+      "type": "Text Find and Replace",
+      "pos": [
+        -940,
+        1490
+      ],
+      "size": [
+        317.4000244140625,
+        166
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 415,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result_text",
+          "type": "STRING",
+          "links": [
+            386
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "replacement_count_number",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "replacement_count_float",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        },
+        {
+          "name": "replacement_count_int",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Find and Replace"
+      },
+      "widgets_values": [
+        "",
+        ":1.0",
+        ":0.8"
+      ]
+    },
+    {
+      "id": 136,
+      "type": "Note",
+      "pos": [
+        -810,
+        1760
+      ],
+      "size": [
+        220,
+        140
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "0.8 es lo normal"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 143,
+      "type": "Constant Number",
+      "pos": [
+        -940,
+        1080
+      ],
+      "size": [
+        315,
+        146
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "number_as_text",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "number_as_text"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "NUMBER",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": []
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            242
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "INT",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Constant Number"
+      },
+      "widgets_values": [
+        "integer",
+        142,
+        ""
+      ]
+    },
+    {
+      "id": 141,
+      "type": "Number Counter",
+      "pos": [
+        -420,
+        1140
+      ],
+      "size": [
+        315,
+        194
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "reset_bool",
+          "type": "NUMBER",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "stop",
+          "type": "FLOAT",
+          "link": 242,
+          "widget": {
+            "name": "stop"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "number",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 0
+        },
+        {
+          "name": "float",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [],
+          "slot_index": 1
+        },
+        {
+          "name": "int",
+          "type": "FLOAT,INT,NUMBER,STRING",
+          "links": [
+            271,
+            274
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Number Counter"
+      },
+      "widgets_values": [
+        "integer",
+        "increment",
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 200,
+      "type": "CR Combine Prompt",
+      "pos": [
+        -1290,
+        1490
+      ],
+      "size": [
+        210,
+        150
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "part1",
+          "type": "STRING",
+          "link": 419,
+          "widget": {
+            "name": "part1"
+          }
+        },
+        {
+          "name": "part3",
+          "type": "STRING",
+          "link": 420,
+          "widget": {
+            "name": "part3"
+          }
+        },
+        {
+          "name": "part4",
+          "type": "STRING",
+          "link": 421,
+          "widget": {
+            "name": "part4"
+          }
+        },
+        {
+          "name": "part2",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "part2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            415,
+            424
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Combine Prompt"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 197,
+      "type": "Load Text File",
+      "pos": [
+        -2140,
+        1590
+      ],
+      "size": [
+        770,
+        120
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            421
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "DICT",
+          "type": "DICT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Text File"
+      },
+      "widgets_values": [
+        "ComfyUI/input/2/Illoustroust.txt",
+        "[filename]"
+      ]
+    },
+    {
+      "id": 202,
+      "type": "CR Text",
+      "pos": [
+        -1760,
+        1180
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": [
+            419
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "Padding\n"
+      ]
+    }
+  ],
+  "links": [
+    [
+      59,
+      70,
+      0,
+      71,
+      1,
+      "STRING"
+    ],
+    [
+      60,
+      68,
+      1,
+      71,
+      0,
+      "CLIP"
+    ],
+    [
+      61,
+      71,
+      0,
+      66,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      65,
+      66,
+      0,
+      73,
+      0,
+      "LATENT"
+    ],
+    [
+      66,
+      72,
+      2,
+      73,
+      1,
+      "VAE"
+    ],
+    [
+      68,
+      75,
+      4,
+      66,
+      3,
+      "LATENT"
+    ],
+    [
+      70,
+      68,
+      1,
+      76,
+      0,
+      "CLIP"
+    ],
+    [
+      71,
+      68,
+      2,
+      76,
+      1,
+      "STRING"
+    ],
+    [
+      72,
+      76,
+      0,
+      66,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      86,
+      85,
+      0,
+      82,
+      0,
+      "STRING"
+    ],
+    [
+      87,
+      84,
+      0,
+      82,
+      1,
+      "STRING"
+    ],
+    [
+      88,
+      83,
+      0,
+      82,
+      2,
+      "STRING"
+    ],
+    [
+      107,
+      88,
+      0,
+      66,
+      4,
+      "INT"
+    ],
+    [
+      109,
+      87,
+      0,
+      93,
+      1,
+      "INT"
+    ],
+    [
+      110,
+      86,
+      0,
+      93,
+      2,
+      "FLOAT"
+    ],
+    [
+      111,
+      72,
+      3,
+      93,
+      3,
+      "STRING"
+    ],
+    [
+      112,
+      92,
+      0,
+      93,
+      4,
+      "STRING"
+    ],
+    [
+      113,
+      70,
+      0,
+      93,
+      5,
+      "STRING"
+    ],
+    [
+      114,
+      88,
+      0,
+      93,
+      6,
+      "INT"
+    ],
+    [
+      115,
+      75,
+      0,
+      93,
+      7,
+      "INT"
+    ],
+    [
+      116,
+      75,
+      1,
+      93,
+      8,
+      "INT"
+    ],
+    [
+      124,
+      92,
+      0,
+      68,
+      2,
+      "STRING"
+    ],
+    [
+      130,
+      68,
+      0,
+      104,
+      0,
+      "*"
+    ],
+    [
+      133,
+      104,
+      0,
+      66,
+      0,
+      "MODEL"
+    ],
+    [
+      143,
+      82,
+      0,
+      115,
+      0,
+      "STRING"
+    ],
+    [
+      146,
+      115,
+      0,
+      116,
+      0,
+      "STRING"
+    ],
+    [
+      147,
+      72,
+      1,
+      118,
+      0,
+      "CLIP"
+    ],
+    [
+      150,
+      86,
+      0,
+      66,
+      5,
+      "FLOAT"
+    ],
+    [
+      151,
+      87,
+      0,
+      66,
+      6,
+      "INT"
+    ],
+    [
+      166,
+      114,
+      0,
+      115,
+      1,
+      "STRING"
+    ],
+    [
+      167,
+      118,
+      0,
+      68,
+      1,
+      "CLIP"
+    ],
+    [
+      168,
+      72,
+      0,
+      68,
+      0,
+      "MODEL"
+    ],
+    [
+      174,
+      115,
+      0,
+      131,
+      0,
+      "*"
+    ],
+    [
+      179,
+      68,
+      2,
+      132,
+      0,
+      "STRING"
+    ],
+    [
+      242,
+      143,
+      1,
+      141,
+      1,
+      "FLOAT"
+    ],
+    [
+      271,
+      141,
+      2,
+      152,
+      1,
+      "INT"
+    ],
+    [
+      272,
+      152,
+      0,
+      151,
+      0,
+      "STRING"
+    ],
+    [
+      274,
+      141,
+      2,
+      153,
+      0,
+      "*"
+    ],
+    [
+      277,
+      82,
+      0,
+      154,
+      1,
+      "STRING"
+    ],
+    [
+      278,
+      154,
+      0,
+      152,
+      0,
+      "STRING"
+    ],
+    [
+      284,
+      152,
+      0,
+      130,
+      0,
+      "*"
+    ],
+    [
+      291,
+      98,
+      1,
+      158,
+      0,
+      "*"
+    ],
+    [
+      297,
+      159,
+      0,
+      92,
+      0,
+      "*"
+    ],
+    [
+      300,
+      130,
+      0,
+      159,
+      0,
+      "*"
+    ],
+    [
+      301,
+      131,
+      0,
+      159,
+      1,
+      "*"
+    ],
+    [
+      331,
+      73,
+      0,
+      93,
+      0,
+      "IMAGE"
+    ],
+    [
+      386,
+      133,
+      0,
+      154,
+      0,
+      "STRING"
+    ],
+    [
+      415,
+      200,
+      0,
+      133,
+      0,
+      "STRING"
+    ],
+    [
+      419,
+      202,
+      0,
+      200,
+      0,
+      "STRING"
+    ],
+    [
+      420,
+      199,
+      0,
+      200,
+      1,
+      "STRING"
+    ],
+    [
+      421,
+      197,
+      0,
+      200,
+      2,
+      "STRING"
+    ],
+    [
+      424,
+      200,
+      0,
+      203,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "ksampler",
+      "bounding": [
+        1780,
+        1350,
+        910,
+        900
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "THE AUTOMATIC GROUP?",
+      "bounding": [
+        -1710,
+        880,
+        2000,
+        1630
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "image saver",
+      "bounding": [
+        1920,
+        2420,
+        1060,
+        920
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5209868481924552,
+      "offset": [
+        2475.2155397686715,
+        -1452.1196313171167
+      ]
+    },
+    "node_versions": {
+      "ComfyUI-Custom-Scripts": "a53ef9b617ed1331640d7a2cd97644995908dc00",
+      "ComfyUI_Comfyroll_CustomNodes": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+      "comfy-core": "0.3.14",
+      "was-node-suite-comfyui": "393aecf91fe193f292f02421ac8262cc88ed2875",
+      "comfyui_lora_tag_loader": "c1e1a061d42384e06ff6c547c4a00aef7cc96e59",
+      "ComfyUI-Image-Saver": "f8520bcfe5339ba7b4bb64ba96f6ed03da87fb89",
+      "comfyui-crystools": "1.22.0",
+      "ComfyUI-SelectStringFromListWithIndex": "989cc8e93a9f5f97f7163de56d962383aeecc10b"
+    },
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": false,
+    "VHS_KeepIntermediate": false
+  },
+  "version": 0.4
+}
